@@ -1,0 +1,14 @@
+C:\Users\Administrator\documents\visual studio 2010\Projects\IDAL\bin\Debug\IDAL.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\IDAL\bin\Debug\IDAL.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\IDAL\bin\Debug\Model.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\IDAL\bin\Debug\Model.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\IDAL\obj\Debug\IDAL.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\IDAL\obj\Debug\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\bin\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\bin\Debug\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\bin\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\bin\Debug\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\obj\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\obj\Debug\IDAL.pdb

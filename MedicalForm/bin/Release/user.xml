@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<UserLogin>
+  <User>
+    <Check>1</Check>
+    <UserName>张三</UserName>
+    <UserPwd>456</UserPwd>
+  </User>
+</UserLogin>

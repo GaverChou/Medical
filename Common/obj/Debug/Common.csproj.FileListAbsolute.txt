@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\obj\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\obj\Debug\Common.pdb

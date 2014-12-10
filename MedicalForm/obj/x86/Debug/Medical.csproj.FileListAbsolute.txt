@@ -1,0 +1,17 @@
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\Medical.exe.config
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\Medical.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\Medical.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\BLL.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\IDAL.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\DALFactory.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\Model.dll
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\BLL.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\IDAL.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\DALFactory.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\bin\Debug\Model.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\obj\x86\Debug\Medical.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\obj\x86\Debug\Medical.Form1.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\obj\x86\Debug\Medical.Properties.Resources.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\obj\x86\Debug\Medical.csproj.GenerateResource.Cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\obj\x86\Debug\Medical.exe
+C:\Users\Administrator\documents\visual studio 2010\Projects\Medical\obj\x86\Debug\Medical.pdb

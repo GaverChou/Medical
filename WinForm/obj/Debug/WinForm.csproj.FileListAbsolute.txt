@@ -1,0 +1,52 @@
+c:\users\administrator\documents\visual studio 2010\Projects\WinForm\bin\Debug\WinForm.dll
+c:\users\administrator\documents\visual studio 2010\Projects\WinForm\bin\Debug\WinForm.pdb
+c:\users\administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.LoginUI.resources
+c:\users\administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.dll
+c:\users\administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.pdb
+C:\Users\Administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.RegisterUI.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.FindPasswdUI.resources
+C:\Users\Administrator\documents\visual studio 2010\Projects\WinForm\obj\Debug\WinForm.MainUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WinForm\bin\Debug\BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WinForm\bin\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WinForm\bin\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WinForm\bin\Debug\DALFactory.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WinForm\bin\Debug\BLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WinForm\bin\Debug\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WinForm\bin\Debug\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\WinForm\bin\Debug\DALFactory.pdb
+D:\大三上学习资料\数据库工程\myself\WinForm\obj\Debug\WinForm.csprojResolveAssemblyReference.cache
+D:\大三上学习资料\数据库工程\myself\WinForm\obj\Debug\WinForm.FindPasswdUI.resources
+D:\大三上学习资料\数据库工程\myself\WinForm\obj\Debug\WinForm.LoginUI.resources
+D:\大三上学习资料\数据库工程\myself\WinForm\obj\Debug\WinForm.MainUI.resources
+D:\大三上学习资料\数据库工程\myself\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+D:\大三上学习资料\数据库工程\myself\WinForm\obj\Debug\WinForm.RegisterUI.resources
+D:\大三上学习资料\数据库工程\myself\WinForm\obj\Debug\WinForm.csproj.GenerateResource.Cache
+D:\大三上学习资料\数据库工程\myself\WinForm\obj\Debug\WinForm.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\WinForm.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\WinForm.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\DALFactory.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\BLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\bin\Debug\DALFactory.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.FindPasswdUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.LoginUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.MainUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.Patient.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.Properties.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.RegisterUI.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.药品管理.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.验方管理.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.FormDB.resources

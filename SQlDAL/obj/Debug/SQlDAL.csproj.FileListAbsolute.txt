@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\bin\Debug\SQlDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\bin\Debug\SQlDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\bin\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\bin\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\bin\Debug\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\bin\Debug\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\obj\Debug\SQlDAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\obj\Debug\SQlDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\obj\Debug\SQlDAL.pdb

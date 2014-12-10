@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Model\bin\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Model\bin\Debug\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Model\obj\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Model\obj\Debug\Model.pdb

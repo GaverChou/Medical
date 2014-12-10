@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\BLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\DALFactory.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\DALFactory.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Debug\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\obj\Debug\BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\obj\Debug\BLL.pdb

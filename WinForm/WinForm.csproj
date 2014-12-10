@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB24899D-9A7B-460C-A4FB-9B996DE87FED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinForm</RootNamespace>
+    <AssemblyName>WinForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SkinForm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SkinForm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FindPasswdUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindPasswdUI.Designer.cs">
+      <DependentUpon>FindPasswdUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDB.designer.cs">
+      <DependentUpon>FormDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI.designer.cs">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI.Designer.cs">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterUI.designer.cs">
+      <DependentUpon>RegisterUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHelper.cs" />
+    <Compile Include="添加药品.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加药品.designer.cs">
+      <DependentUpon>添加药品.cs</DependentUpon>
+    </Compile>
+    <Compile Include="药品管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="药品管理.designer.cs">
+      <DependentUpon>药品管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="验方管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="验方管理.designer.cs">
+      <DependentUpon>验方管理.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FindPasswdUI.resx">
+      <DependentUpon>FindPasswdUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDB.resx">
+      <DependentUpon>FormDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI.resx">
+      <DependentUpon>LoginUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI.resx">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegisterUI.resx">
+      <DependentUpon>RegisterUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="添加药品.resx">
+      <DependentUpon>添加药品.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="药品管理.resx">
+      <DependentUpon>药品管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="验方管理.resx">
+      <DependentUpon>验方管理.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\CloseDownBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\CloseMouseBack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\MiniDownBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\MiniMouseBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\MiniNormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\blue_btn_move.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\blue_btn_normal.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\pannal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\p2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\CloseNormlBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_bg_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_bg_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\icon_bg_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\res\icon_bg_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{FD1F77AF-84CA-47F4-B49F-1D2763DA3F03}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{D34B78B2-8F76-4AD6-B7B7-3A3772065BC3}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{CC598C79-B0DD-41A8-BBC8-EAA2D933A119}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

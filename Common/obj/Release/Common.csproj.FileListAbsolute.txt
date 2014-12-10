@@ -1,0 +1,7 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Release\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Release\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\obj\Release\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\obj\Release\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Release\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Release\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\obj\Release\Common.csprojResolveAssemblyReference.cache

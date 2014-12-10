@@ -1,0 +1,11 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\bin\Debug\DALFactory.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\bin\Debug\DALFactory.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\bin\Debug\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\bin\Debug\SQlDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\bin\Debug\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\bin\Debug\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\bin\Debug\SQlDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\bin\Debug\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\obj\Debug\DALFactory.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\DALFactory\obj\Debug\DALFactory.pdb

@@ -1,0 +1,13 @@
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\BLL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\Common.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\DALFactory.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\IDAL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\Model.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\Common.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\DALFactory.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\IDAL.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\bin\Release\Model.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\obj\Release\BLL.dll
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\BLL\obj\Release\BLL.pdb
