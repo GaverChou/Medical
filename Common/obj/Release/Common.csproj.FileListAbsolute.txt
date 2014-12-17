@@ -5,4 +5,14 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\obj\
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Release\Model.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Release\Model.pdb
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\Common\bin\Release\SkinForm.dll
+=======
+C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\bin\Release\Common.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\bin\Release\Common.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\bin\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\bin\Release\Model.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\obj\Release\Common.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\obj\Release\Common.pdb
+>>>>>>> 5cb71995bace99440b7c31fc740696fc5e363381

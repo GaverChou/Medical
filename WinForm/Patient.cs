@@ -170,6 +170,13 @@ namespace WinForm
             }
         }
 
+        private void data_box_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+    
+
         
     }
 }

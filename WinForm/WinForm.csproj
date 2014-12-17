@@ -87,23 +87,29 @@
       <DependentUpon>RegisterUI.cs</DependentUpon>
     </Compile>
     <Compile Include="UserHelper.cs" />
-    <Compile Include="添加药品.cs">
+    <Compile Include="add_drugs..cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="添加药品.designer.cs">
-      <DependentUpon>添加药品.cs</DependentUpon>
+    <Compile Include="add_drugs..designer.cs">
+      <DependentUpon>add_drugs..cs</DependentUpon>
     </Compile>
-    <Compile Include="药品管理.cs">
+    <Compile Include="drugs_management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="药品管理.designer.cs">
-      <DependentUpon>药品管理.cs</DependentUpon>
+    <Compile Include="drugs_management.designer.cs">
+      <DependentUpon>drugs_management.cs</DependentUpon>
     </Compile>
-    <Compile Include="验方管理.cs">
+    <Compile Include="prescription_management.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="验方管理.designer.cs">
-      <DependentUpon>验方管理.cs</DependentUpon>
+    <Compile Include="prescription_management.designer.cs">
+      <DependentUpon>prescription_management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usersetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usersetting.Designer.cs">
+      <DependentUpon>usersetting.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -129,14 +135,17 @@
     <EmbeddedResource Include="RegisterUI.resx">
       <DependentUpon>RegisterUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="添加药品.resx">
-      <DependentUpon>添加药品.cs</DependentUpon>
+    <EmbeddedResource Include="add_drugs..resx">
+      <DependentUpon>add_drugs..cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="药品管理.resx">
-      <DependentUpon>药品管理.cs</DependentUpon>
+    <EmbeddedResource Include="drugs_management.resx">
+      <DependentUpon>drugs_management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="验方管理.resx">
-      <DependentUpon>验方管理.cs</DependentUpon>
+    <EmbeddedResource Include="prescription_management.resx">
+      <DependentUpon>prescription_management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usersetting.resx">
+      <DependentUpon>usersetting.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

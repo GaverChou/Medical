@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 database/
 Common/bin/
 Common/obj/
@@ -14,3 +15,8 @@ SQLDAL/obj/
 WinForm/bin/
 WinForm/obj/
 *.dll
+=======
+bin/
+obj/
+database/
+>>>>>>> 5cb71995bace99440b7c31fc740696fc5e363381

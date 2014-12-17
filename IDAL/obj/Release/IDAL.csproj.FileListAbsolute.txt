@@ -5,3 +5,10 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\bin\Re
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\obj\Release\IDAL.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\obj\Release\IDAL.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\IDAL\obj\Release\IDAL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\bin\Release\IDAL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\bin\Release\IDAL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\bin\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\bin\Release\Model.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\obj\Release\IDAL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\obj\Release\IDAL.pdb

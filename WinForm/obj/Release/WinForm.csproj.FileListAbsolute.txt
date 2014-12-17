@@ -25,3 +25,32 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.pdb
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.添加药品.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\WinForm.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\WinForm.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\BLL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\Common.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\SkinForm.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\IDAL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\DALFactory.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\BLL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\Common.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\Model.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\IDAL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\DALFactory.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.FindPasswdUI.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.FormDB.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.LoginUI.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.MainUI.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.Patient.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.Properties.Resources.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.RegisterUI.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.add_drugs.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.drugs_management.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.prescription_management.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.usersetting.resources

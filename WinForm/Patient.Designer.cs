@@ -98,7 +98,7 @@
             this.label9.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.Location = new System.Drawing.Point(522, 405);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 25);
+            this.label9.Size = new System.Drawing.Size(93, 20);
             this.label9.TabIndex = 17;
             this.label9.Text = " 处 方 药 物  ";
             // 
@@ -128,7 +128,7 @@
             this.label8.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.Location = new System.Drawing.Point(27, 405);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 25);
+            this.label8.Size = new System.Drawing.Size(93, 20);
             this.label8.TabIndex = 15;
             this.label8.Text = " 病 史 记 录  ";
             // 
@@ -202,13 +202,14 @@
             this.data_box.TabIndex = 0;
             this.data_box.TabStop = false;
             this.data_box.Text = "基本信息";
+            this.data_box.Enter += new System.EventHandler(this.data_box_Enter);
             // 
             // date_time
             // 
             this.date_time.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.date_time.Location = new System.Drawing.Point(326, 266);
             this.date_time.Name = "date_time";
-            this.date_time.Size = new System.Drawing.Size(85, 27);
+            this.date_time.Size = new System.Drawing.Size(85, 23);
             this.date_time.TabIndex = 42;
             this.date_time.Visible = false;
             // 
@@ -232,7 +233,7 @@
             this.comboBox1.Location = new System.Drawing.Point(417, 266);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(58, 28);
+            this.comboBox1.Size = new System.Drawing.Size(58, 25);
             this.comboBox1.TabIndex = 40;
             this.comboBox1.Text = "姓名";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
@@ -282,7 +283,7 @@
             this.doc_tb.Location = new System.Drawing.Point(326, 128);
             this.doc_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.doc_tb.Name = "doc_tb";
-            this.doc_tb.Size = new System.Drawing.Size(149, 27);
+            this.doc_tb.Size = new System.Drawing.Size(149, 23);
             this.doc_tb.TabIndex = 32;
             // 
             // money_tb
@@ -290,7 +291,7 @@
             this.money_tb.Location = new System.Drawing.Point(326, 174);
             this.money_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.money_tb.Name = "money_tb";
-            this.money_tb.Size = new System.Drawing.Size(149, 27);
+            this.money_tb.Size = new System.Drawing.Size(149, 23);
             this.money_tb.TabIndex = 31;
             // 
             // name_find_tb
@@ -298,7 +299,7 @@
             this.name_find_tb.Location = new System.Drawing.Point(326, 266);
             this.name_find_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.name_find_tb.Name = "name_find_tb";
-            this.name_find_tb.Size = new System.Drawing.Size(85, 27);
+            this.name_find_tb.Size = new System.Drawing.Size(85, 23);
             this.name_find_tb.TabIndex = 30;
             // 
             // zhenduan_tb
@@ -306,7 +307,7 @@
             this.zhenduan_tb.Location = new System.Drawing.Point(326, 36);
             this.zhenduan_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.zhenduan_tb.Name = "zhenduan_tb";
-            this.zhenduan_tb.Size = new System.Drawing.Size(149, 27);
+            this.zhenduan_tb.Size = new System.Drawing.Size(149, 23);
             this.zhenduan_tb.TabIndex = 28;
             // 
             // label14
@@ -316,7 +317,7 @@
             this.label14.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label14.Location = new System.Drawing.Point(262, 266);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(70, 27);
+            this.label14.Size = new System.Drawing.Size(57, 21);
             this.label14.TabIndex = 26;
             this.label14.Text = " 查 找 ";
             // 
@@ -327,7 +328,7 @@
             this.label13.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label13.Location = new System.Drawing.Point(262, 174);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(70, 27);
+            this.label13.Size = new System.Drawing.Size(57, 21);
             this.label13.TabIndex = 25;
             this.label13.Text = " 金 额 ";
             // 
@@ -338,7 +339,7 @@
             this.label12.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label12.Location = new System.Drawing.Point(262, 128);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 27);
+            this.label12.Size = new System.Drawing.Size(57, 21);
             this.label12.TabIndex = 24;
             this.label12.Text = " 医 师 ";
             // 
@@ -349,7 +350,7 @@
             this.label10.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.Location = new System.Drawing.Point(262, 36);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 27);
+            this.label10.Size = new System.Drawing.Size(57, 21);
             this.label10.TabIndex = 22;
             this.label10.Text = " 诊 断 ";
             // 
@@ -358,7 +359,7 @@
             this.address_tb.Location = new System.Drawing.Point(326, 82);
             this.address_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.address_tb.Name = "address_tb";
-            this.address_tb.Size = new System.Drawing.Size(149, 27);
+            this.address_tb.Size = new System.Drawing.Size(149, 23);
             this.address_tb.TabIndex = 20;
             // 
             // phone_tb
@@ -366,7 +367,7 @@
             this.phone_tb.Location = new System.Drawing.Point(326, 220);
             this.phone_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phone_tb.Name = "phone_tb";
-            this.phone_tb.Size = new System.Drawing.Size(149, 27);
+            this.phone_tb.Size = new System.Drawing.Size(149, 23);
             this.phone_tb.TabIndex = 19;
             // 
             // id_tb
@@ -374,7 +375,7 @@
             this.id_tb.Location = new System.Drawing.Point(86, 270);
             this.id_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.id_tb.Name = "id_tb";
-            this.id_tb.Size = new System.Drawing.Size(105, 27);
+            this.id_tb.Size = new System.Drawing.Size(105, 23);
             this.id_tb.TabIndex = 18;
             // 
             // old_tb
@@ -382,7 +383,7 @@
             this.old_tb.Location = new System.Drawing.Point(86, 220);
             this.old_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.old_tb.Name = "old_tb";
-            this.old_tb.Size = new System.Drawing.Size(105, 27);
+            this.old_tb.Size = new System.Drawing.Size(105, 23);
             this.old_tb.TabIndex = 17;
             // 
             // gender_tb
@@ -390,7 +391,7 @@
             this.gender_tb.Location = new System.Drawing.Point(86, 320);
             this.gender_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gender_tb.Name = "gender_tb";
-            this.gender_tb.Size = new System.Drawing.Size(105, 27);
+            this.gender_tb.Size = new System.Drawing.Size(105, 23);
             this.gender_tb.TabIndex = 16;
             // 
             // name_tb
@@ -398,7 +399,7 @@
             this.name_tb.Location = new System.Drawing.Point(86, 170);
             this.name_tb.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.name_tb.Name = "name_tb";
-            this.name_tb.Size = new System.Drawing.Size(105, 27);
+            this.name_tb.Size = new System.Drawing.Size(105, 23);
             this.name_tb.TabIndex = 15;
             // 
             // label6
@@ -408,7 +409,7 @@
             this.label6.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(262, 82);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 27);
+            this.label6.Size = new System.Drawing.Size(57, 21);
             this.label6.TabIndex = 13;
             this.label6.Text = " 住 址 ";
             // 
@@ -419,7 +420,7 @@
             this.label5.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(262, 220);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 27);
+            this.label5.Size = new System.Drawing.Size(57, 21);
             this.label5.TabIndex = 12;
             this.label5.Text = " 电 话 ";
             // 
@@ -430,7 +431,7 @@
             this.label4.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(16, 270);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 27);
+            this.label4.Size = new System.Drawing.Size(57, 21);
             this.label4.TabIndex = 11;
             this.label4.Text = " 编 号 ";
             // 
@@ -441,7 +442,7 @@
             this.label2.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(16, 220);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 27);
+            this.label2.Size = new System.Drawing.Size(57, 21);
             this.label2.TabIndex = 10;
             this.label2.Text = " 年 龄 ";
             // 
@@ -452,7 +453,7 @@
             this.label1.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(16, 320);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 27);
+            this.label1.Size = new System.Drawing.Size(57, 21);
             this.label1.TabIndex = 9;
             this.label1.Text = " 性 别 ";
             // 
@@ -463,17 +464,17 @@
             this.label3.Font = new System.Drawing.Font("微软雅黑", 11.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(16, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 27);
+            this.label3.Size = new System.Drawing.Size(57, 21);
             this.label3.TabIndex = 8;
             this.label3.Text = " 姓 名 ";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Patient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(1061, 745);
+            this.ClientSize = new System.Drawing.Size(1061, 727);
             this.Controls.Add(this.skinPanel1);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

@@ -23,3 +23,29 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\MedicalForm
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\MedicalForm\obj\x86\Release\MedicalForm.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\MedicalForm\obj\x86\Release\Medical.exe
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\MedicalForm\obj\x86\Release\Medical.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\Medical.exe.config
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\Medical.exe
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\Medical.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\Medical.exe
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\Medical.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\BLL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\SkinForm.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\SQlDAL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\WinForm.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\IDAL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\DALFactory.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\Common.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\BLL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\SQlDAL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\WinForm.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\IDAL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\Model.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\DALFactory.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\bin\Release\Common.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\Medical.Form2.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\Medical.Form3.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\Medical.Properties.Resources.resources
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\GenerateResource.write.1.tlog
