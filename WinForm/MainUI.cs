@@ -150,13 +150,13 @@ namespace WinForm
 
         private void skinButton2_Click(object sender, EventArgs e)
         {
-            验方管理 r = new 验方管理();
+            prescription_management r = new prescription_management();
             r.Show();
         }
 
         private void skinButton3_Click(object sender, EventArgs e)
         {
-            药品管理 r = new 药品管理();
+            drugs_management r = new drugs_management();
             r.Show();
         }
 
@@ -183,5 +183,14 @@ namespace WinForm
             //用PictureBox控件显示选中的图像文件 
             pictureBox1.Image = Image.FromFile(FileName, true);
         }
+
+        private void skinButton1_Click(object sender, EventArgs e)
+        {
+            usersetting us = new usersetting();
+            us.Show();
+        }
+
+
+        
     }
 }

@@ -9,15 +9,15 @@ using System.Windows.Forms;
 using CCWin;
 namespace WinForm
 {
-    public partial class 药品管理 : CCSkinMain
+    public partial class drugs_management : CCSkinMain
     {
-        public 药品管理()
+        public drugs_management()
         {
             InitializeComponent();
         }
         BLL.DrugBLL drugBLL = BLL.DrugBLL.GetDrugBLLL();
 
-        private void 药品管理_Load(object sender, EventArgs e)
+        private void drugs_management_Load(object sender, EventArgs e)
         {
             drugs_dvg.DataSource = drugBLL.GetAllDrug();
             tx_count.Text = Convert.ToString(drugBLL.GetDrugsCount());
@@ -37,5 +37,32 @@ namespace WinForm
                 skinWaterTextBox1.Text = drug_id + "";
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            add_drugs ads = new add_drugs();
+            ads.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            drugs_management dmt = new drugs_management();
+            dmt.Show();
+        }
+
+        private void skinWaterTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void skinPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        
+
+       
     }
 }

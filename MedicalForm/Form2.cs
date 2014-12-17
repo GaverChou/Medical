@@ -12,6 +12,7 @@ namespace Medical
 {
     public partial class Form2 : CCSkinMain
     {
+//测试一下
         public Form2()
         {
             InitializeComponent();

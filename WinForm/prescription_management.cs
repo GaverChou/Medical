@@ -10,7 +10,7 @@ using CCWin;
 
 namespace WinForm
 {
-    public partial class 验方管理 :CCSkinMain
+    public partial class prescription_management :CCSkinMain
     {
         BLL.EmptabBLL empTabBLL = BLL.EmptabBLL.GetEmptabBLL();
         BLL.EmpDrugBLL empDrugs = BLL.EmpDrugBLL.GetDrugBLLL();
@@ -20,7 +20,7 @@ namespace WinForm
         CurrencyManager myBind;//绑定管理器对象，用来使绑定到同一个数据源的多个控件保持同步
         bool isFirst = true;
 
-        public 验方管理()
+        public prescription_management()
         {
             InitializeComponent();
         }
@@ -141,5 +141,11 @@ namespace WinForm
             ab = txb_search.Text.Trim();
             Fill();
         }
+
+        private void bt_delete_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
