@@ -7,3 +7,12 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\bin\
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\obj\Release\SQlDAL.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\obj\Release\SQlDAL.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\SQlDAL\obj\Release\SQlDAL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\bin\Release\SQlDAL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\bin\Release\SQlDAL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\bin\Release\IDAL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\bin\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\bin\Release\IDAL.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\bin\Release\Model.pdb
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\obj\Release\SQlDAL.dll
+C:\Users\Administrator\Desktop\数据库大作业\Medical\SQlDAL\obj\Release\SQlDAL.pdb

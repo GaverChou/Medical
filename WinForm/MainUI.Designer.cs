@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUI));
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.tb_jishu = new CCWin.SkinControl.SkinWaterTextBox();
@@ -119,7 +119,7 @@
             this.tb_jishu.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tb_jishu.Location = new System.Drawing.Point(443, 584);
             this.tb_jishu.Name = "tb_jishu";
-            this.tb_jishu.Size = new System.Drawing.Size(100, 27);
+            this.tb_jishu.Size = new System.Drawing.Size(100, 23);
             this.tb_jishu.TabIndex = 8;
             this.tb_jishu.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_jishu.WaterText = "";
@@ -164,7 +164,7 @@
             this.tb_yanfang.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tb_yanfang.Location = new System.Drawing.Point(73, 263);
             this.tb_yanfang.Name = "tb_yanfang";
-            this.tb_yanfang.Size = new System.Drawing.Size(100, 27);
+            this.tb_yanfang.Size = new System.Drawing.Size(100, 23);
             this.tb_yanfang.TabIndex = 9;
             this.tb_yanfang.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_yanfang.WaterText = "";
@@ -176,7 +176,7 @@
             this.label14.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label14.Location = new System.Drawing.Point(13, 263);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 27);
+            this.label14.Size = new System.Drawing.Size(52, 21);
             this.label14.TabIndex = 22;
             this.label14.Text = " 验方 ";
             // 
@@ -187,7 +187,7 @@
             this.label12.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label12.Location = new System.Drawing.Point(369, 263);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(64, 27);
+            this.label12.Size = new System.Drawing.Size(52, 21);
             this.label12.TabIndex = 21;
             this.label12.Text = " 剂数 ";
             // 
@@ -208,14 +208,14 @@
             this.drug_tab_dv.GridColor = System.Drawing.SystemColors.Desktop;
             this.drug_tab_dv.Location = new System.Drawing.Point(3, 26);
             this.drug_tab_dv.Name = "drug_tab_dv";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("微软雅黑", 11F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.drug_tab_dv.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("微软雅黑", 11F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.drug_tab_dv.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.drug_tab_dv.RowHeadersVisible = false;
             this.drug_tab_dv.RowTemplate.Height = 23;
             this.drug_tab_dv.Size = new System.Drawing.Size(536, 235);
@@ -225,45 +225,45 @@
             // 
             // drug_ab
             // 
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_ab.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_ab.DefaultCellStyle = dataGridViewCellStyle1;
             this.drug_ab.HeaderText = "简码";
             this.drug_ab.Name = "drug_ab";
             this.drug_ab.Width = 70;
             // 
             // drug_name
             // 
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_name.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_name.DefaultCellStyle = dataGridViewCellStyle2;
             this.drug_name.HeaderText = "名称";
             this.drug_name.Name = "drug_name";
             // 
             // drug_count
             // 
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_count.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_count.DefaultCellStyle = dataGridViewCellStyle3;
             this.drug_count.HeaderText = "数量";
             this.drug_count.Name = "drug_count";
             // 
             // unit
             // 
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.unit.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.unit.DefaultCellStyle = dataGridViewCellStyle4;
             this.unit.HeaderText = "单位";
             this.unit.Name = "unit";
             this.unit.Width = 70;
             // 
             // unit_money
             // 
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.unit_money.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.unit_money.DefaultCellStyle = dataGridViewCellStyle5;
             this.unit_money.HeaderText = "单价";
             this.unit_money.Name = "unit_money";
             // 
             // all_money
             // 
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.all_money.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.all_money.DefaultCellStyle = dataGridViewCellStyle6;
             this.all_money.HeaderText = "合计";
             this.all_money.Name = "all_money";
             // 
@@ -324,7 +324,7 @@
             this.label10.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label10.Location = new System.Drawing.Point(287, 184);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(64, 27);
+            this.label10.Size = new System.Drawing.Size(52, 21);
             this.label10.TabIndex = 20;
             this.label10.Text = " 病史 ";
             // 
@@ -333,7 +333,7 @@
             this.tb_zhenduan.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.tb_zhenduan.Location = new System.Drawing.Point(351, 145);
             this.tb_zhenduan.Name = "tb_zhenduan";
-            this.tb_zhenduan.Size = new System.Drawing.Size(137, 27);
+            this.tb_zhenduan.Size = new System.Drawing.Size(137, 23);
             this.tb_zhenduan.TabIndex = 6;
             // 
             // tb_idcard
@@ -341,7 +341,7 @@
             this.tb_idcard.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.tb_idcard.Location = new System.Drawing.Point(73, 268);
             this.tb_idcard.Name = "tb_idcard";
-            this.tb_idcard.Size = new System.Drawing.Size(132, 27);
+            this.tb_idcard.Size = new System.Drawing.Size(132, 23);
             this.tb_idcard.TabIndex = 4;
             // 
             // label9
@@ -351,7 +351,7 @@
             this.label9.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label9.Location = new System.Drawing.Point(287, 145);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 27);
+            this.label9.Size = new System.Drawing.Size(52, 21);
             this.label9.TabIndex = 16;
             this.label9.Text = " 诊断 ";
             // 
@@ -362,7 +362,7 @@
             this.label8.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label8.Location = new System.Drawing.Point(14, 268);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 27);
+            this.label8.Size = new System.Drawing.Size(57, 21);
             this.label8.TabIndex = 15;
             this.label8.Text = " 证件  ";
             // 
@@ -371,7 +371,7 @@
             this.rb_woman.AutoSize = true;
             this.rb_woman.Location = new System.Drawing.Point(436, 100);
             this.rb_woman.Name = "rb_woman";
-            this.rb_woman.Size = new System.Drawing.Size(52, 29);
+            this.rb_woman.Size = new System.Drawing.Size(42, 24);
             this.rb_woman.TabIndex = 14;
             this.rb_woman.TabStop = true;
             this.rb_woman.Text = "女";
@@ -382,7 +382,7 @@
             this.rb_man.AutoSize = true;
             this.rb_man.Location = new System.Drawing.Point(369, 100);
             this.rb_man.Name = "rb_man";
-            this.rb_man.Size = new System.Drawing.Size(52, 29);
+            this.rb_man.Size = new System.Drawing.Size(42, 24);
             this.rb_man.TabIndex = 13;
             this.rb_man.TabStop = true;
             this.rb_man.Text = "男";
@@ -393,7 +393,7 @@
             this.date_time.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.date_time.Location = new System.Drawing.Point(73, 228);
             this.date_time.Name = "date_time";
-            this.date_time.Size = new System.Drawing.Size(132, 27);
+            this.date_time.Size = new System.Drawing.Size(132, 23);
             this.date_time.TabIndex = 3;
             // 
             // tb_tel
@@ -401,7 +401,7 @@
             this.tb_tel.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.tb_tel.Location = new System.Drawing.Point(73, 184);
             this.tb_tel.Name = "tb_tel";
-            this.tb_tel.Size = new System.Drawing.Size(132, 27);
+            this.tb_tel.Size = new System.Drawing.Size(132, 23);
             this.tb_tel.TabIndex = 2;
             // 
             // tb_old
@@ -409,7 +409,7 @@
             this.tb_old.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.tb_old.Location = new System.Drawing.Point(73, 146);
             this.tb_old.Name = "tb_old";
-            this.tb_old.Size = new System.Drawing.Size(132, 27);
+            this.tb_old.Size = new System.Drawing.Size(132, 23);
             this.tb_old.TabIndex = 1;
             // 
             // tb_pname
@@ -417,7 +417,7 @@
             this.tb_pname.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.tb_pname.Location = new System.Drawing.Point(351, 56);
             this.tb_pname.Name = "tb_pname";
-            this.tb_pname.Size = new System.Drawing.Size(137, 27);
+            this.tb_pname.Size = new System.Drawing.Size(137, 23);
             this.tb_pname.TabIndex = 5;
             // 
             // label3
@@ -427,7 +427,7 @@
             this.label3.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label3.Location = new System.Drawing.Point(287, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 27);
+            this.label3.Size = new System.Drawing.Size(52, 21);
             this.label3.TabIndex = 7;
             this.label3.Text = " 姓名 ";
             // 
@@ -438,7 +438,7 @@
             this.label7.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label7.Location = new System.Drawing.Point(14, 146);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 27);
+            this.label7.Size = new System.Drawing.Size(52, 21);
             this.label7.TabIndex = 5;
             this.label7.Text = " 年龄 ";
             // 
@@ -449,7 +449,7 @@
             this.label6.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label6.Location = new System.Drawing.Point(287, 102);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 27);
+            this.label6.Size = new System.Drawing.Size(52, 21);
             this.label6.TabIndex = 4;
             this.label6.Text = " 性别 ";
             // 
@@ -460,7 +460,7 @@
             this.label5.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label5.Location = new System.Drawing.Point(14, 228);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 27);
+            this.label5.Size = new System.Drawing.Size(52, 21);
             this.label5.TabIndex = 3;
             this.label5.Text = " 日期 ";
             // 
@@ -471,7 +471,7 @@
             this.label4.Font = new System.Drawing.Font("微软雅黑", 11.5F);
             this.label4.Location = new System.Drawing.Point(14, 184);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 27);
+            this.label4.Size = new System.Drawing.Size(52, 21);
             this.label4.TabIndex = 2;
             this.label4.Text = " 电话 ";
             // 
@@ -500,7 +500,7 @@
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label13.Location = new System.Drawing.Point(125, 4);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(54, 20);
+            this.label13.Size = new System.Drawing.Size(44, 17);
             this.label13.TabIndex = 8;
             this.label13.Text = "医生！";
             // 
@@ -511,7 +511,7 @@
             this.lb_time.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lb_time.Location = new System.Drawing.Point(358, 4);
             this.lb_time.Name = "lb_time";
-            this.lb_time.Size = new System.Drawing.Size(54, 20);
+            this.lb_time.Size = new System.Drawing.Size(44, 17);
             this.lb_time.TabIndex = 7;
             this.lb_time.Text = "星期日";
             // 
@@ -522,7 +522,7 @@
             this.lb_username.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lb_username.Location = new System.Drawing.Point(74, 4);
             this.lb_username.Name = "lb_username";
-            this.lb_username.Size = new System.Drawing.Size(54, 20);
+            this.lb_username.Size = new System.Drawing.Size(44, 17);
             this.lb_username.TabIndex = 6;
             this.lb_username.Text = "某某某";
             // 
@@ -533,7 +533,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label11.Location = new System.Drawing.Point(975, 2);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(104, 20);
+            this.label11.Size = new System.Drawing.Size(83, 17);
             this.label11.TabIndex = 5;
             this.label11.Text = "版本号：1.0.0";
             // 
@@ -544,7 +544,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(239, 4);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 20);
+            this.label2.Size = new System.Drawing.Size(104, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "上次登录时间为：";
             // 
@@ -555,7 +555,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(9, 4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "欢迎你！";
             // 
@@ -620,7 +620,7 @@
             this.baocun_btn.BackColor = System.Drawing.Color.Transparent;
             this.baocun_btn.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.baocun_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.baocun_btn.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.baocun_btn.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.baocun_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.baocun_btn.DownBack = null;
             this.baocun_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -645,7 +645,7 @@
             this.print_btn.BackColor = System.Drawing.Color.Transparent;
             this.print_btn.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.print_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.print_btn.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.print_btn.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.print_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.print_btn.DownBack = null;
             this.print_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -670,7 +670,7 @@
             this.clear_btn.BackColor = System.Drawing.Color.Transparent;
             this.clear_btn.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.clear_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clear_btn.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.clear_btn.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.clear_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.clear_btn.DownBack = null;
             this.clear_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -720,7 +720,7 @@
             this.skinButton1.BackColor = System.Drawing.Color.Transparent;
             this.skinButton1.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.skinButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skinButton1.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skinButton1.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.skinButton1.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton1.DownBack = null;
             this.skinButton1.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -738,13 +738,14 @@
             this.skinButton1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.skinButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.skinButton1.UseVisualStyleBackColor = false;
+            this.skinButton1.Click += new System.EventHandler(this.skinButton1_Click);
             // 
             // skinButton5
             // 
             this.skinButton5.BackColor = System.Drawing.Color.Transparent;
             this.skinButton5.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.skinButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skinButton5.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skinButton5.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.skinButton5.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton5.DownBack = null;
             this.skinButton5.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -767,7 +768,7 @@
             this.patient_control_btn.BackColor = System.Drawing.Color.Transparent;
             this.patient_control_btn.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.patient_control_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.patient_control_btn.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.patient_control_btn.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.patient_control_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.patient_control_btn.DownBack = null;
             this.patient_control_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -792,7 +793,7 @@
             this.skinButton2.BackColor = System.Drawing.Color.Transparent;
             this.skinButton2.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.skinButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skinButton2.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skinButton2.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.skinButton2.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton2.DownBack = null;
             this.skinButton2.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -817,7 +818,7 @@
             this.skinButton3.BackColor = System.Drawing.Color.Transparent;
             this.skinButton3.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.skinButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skinButton3.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skinButton3.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.skinButton3.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton3.DownBack = null;
             this.skinButton3.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -839,11 +840,11 @@
             // 
             // MainUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 9.2F, System.Drawing.FontStyle.Bold);
-            this.ClientSize = new System.Drawing.Size(1099, 784);
+            this.ClientSize = new System.Drawing.Size(1099, 727);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.skinPanel3);
             this.Controls.Add(this.skinPanel1);

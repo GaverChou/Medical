@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace Model
 {
@@ -11,6 +12,7 @@ namespace Model
         {}
 
         #region Model
+
 
         private int uid;
 
