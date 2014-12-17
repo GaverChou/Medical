@@ -166,5 +166,21 @@ namespace SQlDAL
                 return -1;
             }
         }
+
+
+        public int GetDrugTypeCount()
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append("select count(*) from [drug]");
+            SqlDataReader reader = SqlDbHelper.ExecuteReader(strSql.ToString());
+            if (reader.Read())
+            {
+                return int.Parse(reader[0].ToString());
+            }
+            else
+            {
+                return -1;
+            }
+        }
     }
 }

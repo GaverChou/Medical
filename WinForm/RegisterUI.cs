@@ -35,11 +35,11 @@ namespace WinForm
             string passwd2 = this.passwd_txb_2.Text.Trim();
             if (passwd1==""||passwd1=="")
             {
-                MessageBox.Show("密码为空！！");
+                MessageBoxBuilder.buildErrbox("密码为空！！");
                 return;
             }else if(!passwd1.Equals(passwd2))
             {
-                MessageBox.Show("两次输入密码不同！");
+                MessageBoxBuilder.buildErrbox("两次输入密码不同！");
                 return;
             }
             Model.User user = new Model.User();
@@ -56,15 +56,15 @@ namespace WinForm
             BLL.UserBLL userBLL = BLL.UserBLL.GetUserBLL();
             if (userBLL.Register(user, userdata,out msg))
             {
-                MessageBox.Show("注册成功！");
+                MessageBoxBuilder.buildbox("注册成功！","ok");
             }
             else if (!"".Equals(msg))
             {
-                MessageBox.Show(msg);
+                MessageBoxBuilder.buildErrbox(msg);
             }
             else
             {
-                MessageBox.Show("注册失败！");
+                MessageBoxBuilder.buildErrbox("注册失败！");
             }
 
         }

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUI));
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.tb_jishu = new CCWin.SkinControl.SkinWaterTextBox();
@@ -88,6 +88,7 @@
             this.patient_control_btn = new CCWin.SkinControl.SkinButton();
             this.skinButton2 = new CCWin.SkinControl.SkinButton();
             this.skinButton3 = new CCWin.SkinControl.SkinButton();
+            this.skinComboBox1 = new CCWin.SkinControl.SkinComboBox();
             this.skinPanel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -147,6 +148,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.skinComboBox1);
             this.groupBox2.Controls.Add(this.tb_yanfang);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label12);
@@ -208,62 +210,63 @@
             this.drug_tab_dv.GridColor = System.Drawing.SystemColors.Desktop;
             this.drug_tab_dv.Location = new System.Drawing.Point(3, 26);
             this.drug_tab_dv.Name = "drug_tab_dv";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle21.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("微软雅黑", 11F);
-            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.drug_tab_dv.RowHeadersDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("微软雅黑", 11F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.drug_tab_dv.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.drug_tab_dv.RowHeadersVisible = false;
             this.drug_tab_dv.RowTemplate.Height = 23;
             this.drug_tab_dv.Size = new System.Drawing.Size(536, 235);
             this.drug_tab_dv.TabIndex = 0;
             this.drug_tab_dv.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.drug_tab_dv_CellBeginEdit);
             this.drug_tab_dv.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.drug_tab_dv_CellEndEdit);
+            this.drug_tab_dv.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.drug_tab_dv_CellValueChanged);
             // 
             // drug_ab
             // 
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_ab.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_ab.DefaultCellStyle = dataGridViewCellStyle1;
             this.drug_ab.HeaderText = "简码";
             this.drug_ab.Name = "drug_ab";
             this.drug_ab.Width = 70;
             // 
             // drug_name
             // 
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_name.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_name.DefaultCellStyle = dataGridViewCellStyle2;
             this.drug_name.HeaderText = "名称";
             this.drug_name.Name = "drug_name";
             // 
             // drug_count
             // 
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_count.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_count.DefaultCellStyle = dataGridViewCellStyle3;
             this.drug_count.HeaderText = "数量";
             this.drug_count.Name = "drug_count";
             // 
             // unit
             // 
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.unit.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.unit.DefaultCellStyle = dataGridViewCellStyle4;
             this.unit.HeaderText = "单位";
             this.unit.Name = "unit";
             this.unit.Width = 70;
             // 
             // unit_money
             // 
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.unit_money.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.unit_money.DefaultCellStyle = dataGridViewCellStyle5;
             this.unit_money.HeaderText = "单价";
             this.unit_money.Name = "unit_money";
             // 
             // all_money
             // 
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.all_money.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.all_money.DefaultCellStyle = dataGridViewCellStyle6;
             this.all_money.HeaderText = "合计";
             this.all_money.Name = "all_money";
             // 
@@ -620,7 +623,7 @@
             this.baocun_btn.BackColor = System.Drawing.Color.Transparent;
             this.baocun_btn.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.baocun_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.baocun_btn.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.baocun_btn.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.baocun_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.baocun_btn.DownBack = null;
             this.baocun_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -645,7 +648,7 @@
             this.print_btn.BackColor = System.Drawing.Color.Transparent;
             this.print_btn.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.print_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.print_btn.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.print_btn.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.print_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.print_btn.DownBack = null;
             this.print_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -670,7 +673,7 @@
             this.clear_btn.BackColor = System.Drawing.Color.Transparent;
             this.clear_btn.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.clear_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.clear_btn.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.clear_btn.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.clear_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.clear_btn.DownBack = null;
             this.clear_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -720,7 +723,7 @@
             this.skinButton1.BackColor = System.Drawing.Color.Transparent;
             this.skinButton1.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.skinButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skinButton1.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skinButton1.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.skinButton1.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton1.DownBack = null;
             this.skinButton1.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -744,7 +747,7 @@
             this.skinButton5.BackColor = System.Drawing.Color.Transparent;
             this.skinButton5.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.skinButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skinButton5.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skinButton5.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.skinButton5.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton5.DownBack = null;
             this.skinButton5.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -767,7 +770,7 @@
             this.patient_control_btn.BackColor = System.Drawing.Color.Transparent;
             this.patient_control_btn.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.patient_control_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.patient_control_btn.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.patient_control_btn.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.patient_control_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.patient_control_btn.DownBack = null;
             this.patient_control_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -792,7 +795,7 @@
             this.skinButton2.BackColor = System.Drawing.Color.Transparent;
             this.skinButton2.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.skinButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skinButton2.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skinButton2.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.skinButton2.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton2.DownBack = null;
             this.skinButton2.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -817,7 +820,7 @@
             this.skinButton3.BackColor = System.Drawing.Color.Transparent;
             this.skinButton3.BackgroundImage = global::WinForm.Properties.Resources.icon_bg_hover;
             this.skinButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.skinButton3.BaseColor = System.Drawing.SystemColors.MenuHighlight;
+            this.skinButton3.BaseColor = System.Drawing.Color.DeepSkyBlue;
             this.skinButton3.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.skinButton3.DownBack = null;
             this.skinButton3.DrawType = CCWin.SkinControl.DrawStyle.Img;
@@ -836,6 +839,16 @@
             this.skinButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.skinButton3.UseVisualStyleBackColor = false;
             this.skinButton3.Click += new System.EventHandler(this.skinButton3_Click);
+            // 
+            // skinComboBox1
+            // 
+            this.skinComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.skinComboBox1.FormattingEnabled = true;
+            this.skinComboBox1.Location = new System.Drawing.Point(189, 260);
+            this.skinComboBox1.Name = "skinComboBox1";
+            this.skinComboBox1.Size = new System.Drawing.Size(121, 33);
+            this.skinComboBox1.TabIndex = 24;
+            this.skinComboBox1.WaterText = "";
             // 
             // MainUI
             // 
@@ -927,5 +940,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn all_money;
         private CCWin.SkinControl.SkinWaterTextBox tb_yanfang;
         private System.Windows.Forms.Label label14;
+        private CCWin.SkinControl.SkinComboBox skinComboBox1;
     }
 }

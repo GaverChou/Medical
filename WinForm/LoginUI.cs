@@ -42,7 +42,7 @@ namespace WinForm
                 {
                     if (!XmlRW.GetXmlRW().UpdateXML(@"user.xml", "1", username, passwd))
                     {
-                        MessageBox.Show("保存失败！");
+                        MessageBoxBuilder.buildbox("保存失败！","错误！");
                     }
                 }
                 else
@@ -58,14 +58,14 @@ namespace WinForm
              }
             else if (!"".Equals(msg))
             {
-                MessageBox.Show(msg);
+                MessageBoxBuilder.buildbox(msg, "错误！");
                 this.userName_txb.Text = "";
                 this.passwd_txb.Text = "";
                 this.userName_txb.Focus();
             }
             else
             {
-                MessageBox.Show("登录失败！");
+                MessageBoxBuilder.buildbox("登录失败！", "错误！");
                 this.userName_txb.Text = "";
                 this.passwd_txb.Text = "";
                 this.userName_txb.Focus();

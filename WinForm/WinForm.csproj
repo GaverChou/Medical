@@ -67,6 +67,7 @@
     <Compile Include="MainUI.Designer.cs">
       <DependentUpon>MainUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageBoxBuilder.cs" />
     <Compile Include="Patient.cs">
       <SubType>Form</SubType>
     </Compile>

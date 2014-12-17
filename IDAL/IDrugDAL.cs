@@ -16,5 +16,6 @@ namespace IDAL
         DataTable FindDrugByName(string name); //模糊查询
         Model.Drug GetDrugById(int did);
         double GetDurgsCount();
+        int GetDrugTypeCount();
     }
 }

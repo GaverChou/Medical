@@ -53,7 +53,7 @@ namespace Model
             set{ d_id = value; }
         }
 
-        private byte[] thumb;
+        private byte[] thumb = null;
 
         public byte[] Thumb
         {

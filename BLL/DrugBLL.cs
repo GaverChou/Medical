@@ -43,5 +43,32 @@ namespace BLL
         {
             return iDrug.GetDurgsCount();
         }
+
+        public bool DeleteById(int drug_id, out string msg)
+        {
+            msg = "删除成功！";
+            try
+            {
+                iDrug.DeleteByID(drug_id);
+            }
+            catch (Exception exp)
+            {
+                msg = exp.Message;
+                return false;
+            }
+            return true;
+        }
+
+        public int GetDrugTypeCount()
+        {
+            try
+            {
+                return iDrug.GetDrugTypeCount();
+            }
+            catch (Exception exp)
+            {
+                return -1;
+            }
+        }
     }
 }

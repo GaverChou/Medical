@@ -35,11 +35,11 @@ namespace WinForm
             string pass2 = pass2_txb.Text.Trim();
             if (pass1==""||pass2=="")
             {
-                MessageBox.Show("密码为空！！");
+                MessageBoxBuilder.buildErrbox("密码为空！！");
                 return;
             }else if(!pass1.Equals(pass2))
             {
-                MessageBox.Show("两次输入密码不同！");
+                MessageBoxBuilder.buildErrbox("两次输入密码不同！");
                 return;
             }
             string name = name_txb.Text.Trim();
@@ -49,15 +49,15 @@ namespace WinForm
             string msg = "";
             if (BLL.UserBLL.GetUserBLL().FindPassWord(data, pass1, out msg))
             {
-                MessageBox.Show("重置成功！！");
+                MessageBoxBuilder.buildbox("重置成功！！","成功");
             }
             else if (!"".Equals(msg))
             {
-                MessageBox.Show(msg);
+                MessageBoxBuilder.buildErrbox(msg);
             }
             else
             {
-                MessageBox.Show("找回失败！未知错误！");
+                MessageBoxBuilder.buildErrbox("找回失败！未知错误！");
             }
         }
     }

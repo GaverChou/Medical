@@ -107,7 +107,7 @@ namespace WinForm
             empTab.Apply = "无";
             if (empTabBLL.UpdateEmpTab(empTab))
             {
-                MessageBox.Show("更新成功！");
+                MessageBoxBuilder.buildbox("更新成功！","ok");
             }
             Fill();
         }
@@ -130,7 +130,7 @@ namespace WinForm
             empTab.Apply = "无";
             if (empTabBLL.UpdateEmpTab(empTab))
             {
-                MessageBox.Show("更新成功！");
+                MessageBoxBuilder.buildbox("更新成功！","ok");
             }
             Fill();
         }

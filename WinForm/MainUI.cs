@@ -28,6 +28,9 @@ namespace WinForm
             this.bingli_rbx.LoadFile(@"C:\sample.rtf", RichTextBoxStreamType.RichText);
             this.dv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dv_CellClick);
             this.lb_username.Text = UserHelper.userName;
+            tb_old.DataBindings.Add("Text", tb_pname, "Text");//bangding
+            this.skinComboBox1.DataSource = instance.GetAllDrug();
+            skinComboBox1.DisplayMember = "drug_id";//这是text值
         }
 
         private void dv_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -53,21 +56,6 @@ namespace WinForm
         {
             Patient r = new Patient();
             r.Show();
-        }
-
-        private void drug_tab_dv_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
-        {
-            count = e.RowIndex;
-            int row = e.ColumnIndex;
-            if (row == 1)
-            {
-                dv.Parent = this.drug_tab_dv;
-                dv.RowHeadersVisible = false;
-                dv.Location = new Point(170, (e.RowIndex + 1) * 20);
-                //drug_tab_dv.Rows[count].Cells[row].Value.ToString()
-                dv.DataSource = instance.GetDrugsByAB("A");
-                dv.Show();
-            }
         }
 
         private void drug_tab_dv_CellEndEdit(object sender, DataGridViewCellEventArgs e)
@@ -106,12 +94,12 @@ namespace WinForm
             }
             catch (Exception exp)
             {
-                MessageBox.Show(exp.Message);
+                MessageBoxBuilder.buildbox((exp.Message), "错误！");
                 return;
             }
             patient.Tel = tb_tel.Text.Trim();
             patient.Idcard = tb_idcard.Text.Trim();
-            patient.D_ID = 10000;
+            patient.D_ID = UserHelper.id;
             if (FileName != null && !"".Equals(FileName))
             {
                 if ((pictureBox1.Image != null))
@@ -136,15 +124,16 @@ namespace WinForm
             string msg = "";
             if (patientInstance.AddPatient(patient, patient_tab, out msg))
             {
-                MessageBox.Show("保存成功！");
+                MessageBoxBuilder.buildbox("保存成功！", "ok");
+                pictureBox1.Image = null;
             }
             else if (!"".Equals(msg))
             {
-                MessageBox.Show(msg);
+                MessageBoxBuilder.buildbox(msg,"错误");
             }
             else
             {
-                MessageBox.Show("未知错误！插入失败!");
+                MessageBoxBuilder.buildbox("未知错误！插入失败!","错误");
             }
         }
 
@@ -166,10 +155,6 @@ namespace WinForm
             fdb.Show();
         }
 
-        private void drug_tab_dv_CellValuePushed(object sender, DataGridViewCellValueEventArgs e)
-        {
-
-        }
         string FileName; //变量FileName准备记录"路径+文件名" 
         public string btnImagePressed; //定义一个变量用于监视是否曾经找到过照片 
         public OpenFileDialog opFileDial = new OpenFileDialog(); //定义一个对话框对象opFileDial
@@ -182,6 +167,44 @@ namespace WinForm
             FileName = opFileDial.FileName;
             //用PictureBox控件显示选中的图像文件 
             pictureBox1.Image = Image.FromFile(FileName, true);
+        }
+
+        private void drug_tab_dv_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
+        {
+            count = e.RowIndex;
+            int row = e.ColumnIndex;
+            if (row == 1)
+            {
+                //string data = drug_tab_dv.Rows[count].Cells[1].Value.ToString();
+                //    if (!"".Equals(data) && data != null)
+                //    {
+                dv.Parent = this.drug_tab_dv;
+                dv.RowHeadersVisible = false;
+                dv.Location = new Point(170, (e.RowIndex + 1) * 20);
+                //drug_tab_dv.Rows[count].Cells[row].Value.ToString()
+                dv.DataSource = instance.GetDrugsByAB("A");
+                dv.Show();
+            }
+        }
+
+        private void drug_tab_dv_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            //count = e.RowIndex;
+            //this.label7.Text = "" + count;
+            //int row = e.ColumnIndex;
+            //if (row == 1 )
+            //{
+            //    string data = drug_tab_dv.Rows[count].Cells[1].Value.ToString();
+            //    if (!"".Equals(data) && data != null)
+            //    {
+            //        dv.Parent = this.drug_tab_dv;
+            //        dv.RowHeadersVisible = false;
+            //        dv.Location = new Point(170, (e.RowIndex + 1) * 20);
+            //        //drug_tab_dv.Rows[count].Cells[row].Value.ToString()
+            //        dv.DataSource = instance.GetDrugsByAB(drug_tab_dv.Rows[count].Cells[1].Value.ToString());
+            //        dv.Show();
+            //    }
+            //}
         }
     }
 }

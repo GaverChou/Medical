@@ -31,7 +31,7 @@
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.btn_delete = new CCWin.SkinControl.SkinButton();
             this.tx_count = new CCWin.SkinControl.SkinWaterTextBox();
-            this.skinWaterTextBox1 = new CCWin.SkinControl.SkinWaterTextBox();
+            this.tb_count = new CCWin.SkinControl.SkinWaterTextBox();
             this.tx_search = new CCWin.SkinControl.SkinWaterTextBox();
             this.btn_search = new CCWin.SkinControl.SkinButton();
             this.skinLabel4 = new CCWin.SkinControl.SkinLabel();
@@ -53,7 +53,7 @@
             this.skinPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.skinPanel1.Controls.Add(this.btn_delete);
             this.skinPanel1.Controls.Add(this.tx_count);
-            this.skinPanel1.Controls.Add(this.skinWaterTextBox1);
+            this.skinPanel1.Controls.Add(this.tb_count);
             this.skinPanel1.Controls.Add(this.tx_search);
             this.skinPanel1.Controls.Add(this.btn_search);
             this.skinPanel1.Controls.Add(this.skinLabel4);
@@ -84,6 +84,7 @@
             this.btn_delete.TabIndex = 11;
             this.btn_delete.Text = "删除";
             this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // tx_count
             // 
@@ -95,15 +96,17 @@
             this.tx_count.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tx_count.WaterText = "";
             // 
-            // skinWaterTextBox1
+            // tb_count
             // 
-            this.skinWaterTextBox1.Location = new System.Drawing.Point(312, 44);
-            this.skinWaterTextBox1.Name = "skinWaterTextBox1";
-            this.skinWaterTextBox1.ReadOnly = true;
-            this.skinWaterTextBox1.Size = new System.Drawing.Size(100, 25);
-            this.skinWaterTextBox1.TabIndex = 9;
-            this.skinWaterTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinWaterTextBox1.WaterText = "";
+            this.tb_count.Enabled = false;
+            this.tb_count.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tb_count.Location = new System.Drawing.Point(312, 44);
+            this.tb_count.Name = "tb_count";
+            this.tb_count.ReadOnly = true;
+            this.tb_count.Size = new System.Drawing.Size(100, 27);
+            this.tb_count.TabIndex = 9;
+            this.tb_count.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_count.WaterText = "";
             // 
             // tx_search
             // 
@@ -280,7 +283,7 @@
         private CCWin.SkinControl.SkinButton btn_search;
         private CCWin.SkinControl.SkinWaterTextBox tx_search;
         private CCWin.SkinControl.SkinWaterTextBox tx_count;
-        private CCWin.SkinControl.SkinWaterTextBox skinWaterTextBox1;
+        private CCWin.SkinControl.SkinWaterTextBox tb_count;
         private CCWin.SkinControl.SkinButton btn_delete;
 
     }

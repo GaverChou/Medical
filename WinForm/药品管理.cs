@@ -21,6 +21,7 @@ namespace WinForm
         {
             drugs_dvg.DataSource = drugBLL.GetAllDrug();
             tx_count.Text = Convert.ToString(drugBLL.GetDrugsCount());
+            tb_count.Text = Convert.ToString(drugBLL.GetDrugTypeCount());
         }
 
         private void btn_search_Click(object sender, EventArgs e)
@@ -34,7 +35,19 @@ namespace WinForm
             if (index < drugs_dvg.RowCount)
             {
                 drug_id = Convert.ToInt16(drugs_dvg.Rows[index].Cells[0].Value);
-                skinWaterTextBox1.Text = drug_id + "";
+            }
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            string msg = "";
+            if (drugBLL.DeleteById(drug_id, out msg))
+            {
+                MessageBoxBuilder.buildbox(msg, "ok");
+            }
+            else
+            {
+                MessageBoxBuilder.buildErrbox(msg);
             }
         }
     }

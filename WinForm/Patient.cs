@@ -37,15 +37,15 @@ namespace WinForm
         {
             if (switch_i == 0&&!"".Equals(name_find_tb.Text.Trim()))
             {
-                objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(10000,name_find_tb.Text.Trim());
+                objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(UserHelper.id,name_find_tb.Text.Trim());
             }
             else if (switch_i == 1 && date_time.Value != null)
             {
-                objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(10000, date_time.Value);
+                objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(UserHelper.id, date_time.Value);
             }
             else
             {
-                objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(10000);
+                objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(UserHelper.id);
             }
             this.patient_dwg.DataSource = objDTable;
             if (isFirst)
@@ -60,7 +60,7 @@ namespace WinForm
                 zhenduan_tb.DataBindings.Add(new Binding("Text", objDTable, "zhenduan"));
                 bingshi_bx.DataBindings.Add(new Binding("Text", objDTable, "xianbingshi"));
                 pb_patient.DataBindings.Add(new Binding("Image", objDTable, "thumb",true));
-                doc_tb.Text = "10000";
+                doc_tb.Text = ""+UserHelper.id;
             }
             index = 0;
             if (objDTable.Rows.Count>0 && objDTable.Rows[0]["pid"] != null && objDTable.Rows[0]["pid"].ToString() != "")
@@ -133,6 +133,23 @@ namespace WinForm
             //}
         }
 
+        private Model.Patient ParseData()
+        {
+            Model.Patient patient = new Model.Patient();
+            patient.D_ID = UserHelper.id;
+            patient.Pid = Convert.ToInt32(id_tb.Text);
+            patient.P_name = name_tb.Text;
+            patient.Tel = phone_tb.Text;
+            if (FileName != null && !"".Equals(FileName))
+            {
+                if ((pb_patient.Image != null))
+                    pb_patient.Image.Dispose();
+                patient.Thumb = Common.Util.GetImageByte(FileName);
+            }
+            patient.P_name = name_tb.Text;
+            patient.Gender = gender_tb.Text;
+            return patient;
+        }
         private void save_btn_Click(object sender, EventArgs e)
         {
             if (FileName != null && !"".Equals(FileName))
@@ -142,13 +159,13 @@ namespace WinForm
                byte[] b = Common.Util.GetImageByte(FileName);
                if (BLL.PatientBLL.GetPatientBLL().UpdatePatientPhoto(pid, b))
                {
-                   MessageBox.Show("上传成功！");
+                   MessageBoxBuilder.buildbox("上传成功！","ok");
                    pb_patient.Image = null;
                    Fill();
                }
                else
                {
-                   MessageBox.Show("上传失败！");
+                   MessageBoxBuilder.buildErrbox("上传失败！");
                }
             }
         }

@@ -50,3 +50,4 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.pdb
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.FormDB.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Debug\WinForm.添加药品.resources
