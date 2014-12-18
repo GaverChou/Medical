@@ -39,7 +39,7 @@ namespace SQlDAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("insert into [drug]");
-            strSql.Append("(drug_ab,drug_name,unit_price,unit ,in_price ,stock ,from_where ,wei_jin ,notice ,effect,use_up,use_down values");
+            strSql.Append("(drug_ab,drug_name,unit_price,unit ,in_price ,stock ,from_where ,wei_jin ,notice ,effect,use_up,use_down) values");
             strSql.Append("(@drug_ab,@drug_name,@unit_price,@unit ,@in_price ,@stock ,@from_where ,@wei_jin ,@notice ,@effect,@use_up,@use_down)");
             SqlParameter[] parameters = {
                                             new SqlParameter("@drug_ab",SqlDbType.VarChar,10),

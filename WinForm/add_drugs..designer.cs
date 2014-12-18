@@ -34,6 +34,19 @@
             this.bt_cancel = new System.Windows.Forms.Button();
             this.bt_save = new System.Windows.Forms.Button();
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.药物 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.简码 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.味经 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.注意 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.功效 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.上限 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.下限 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.单位 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.数量 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.进价 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.单价 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.产地 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.skinTextBox2 = new CCWin.SkinControl.SkinTextBox();
             this.skinLabel6 = new CCWin.SkinControl.SkinLabel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -45,17 +58,10 @@
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel7 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel8 = new CCWin.SkinControl.SkinLabel();
-            this.产地 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.单价 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.进价 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.数量 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.单位 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.药物 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.skinPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.skinTextBox2.SuspendLayout();
             this.skinTextBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button3
@@ -132,7 +138,91 @@
             this.skinPanel1.NormlBack = null;
             this.skinPanel1.Size = new System.Drawing.Size(740, 404);
             this.skinPanel1.TabIndex = 22;
-            this.skinPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.skinPanel1_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.药物,
+            this.简码,
+            this.味经,
+            this.注意,
+            this.功效,
+            this.上限,
+            this.下限,
+            this.单位,
+            this.数量,
+            this.进价,
+            this.单价,
+            this.产地});
+            this.dataGridView1.Location = new System.Drawing.Point(38, 70);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 48;
+            this.dataGridView1.RowTemplate.Height = 400;
+            this.dataGridView1.Size = new System.Drawing.Size(671, 301);
+            this.dataGridView1.TabIndex = 13;
+            // 
+            // 药物
+            // 
+            this.药物.HeaderText = "药物";
+            this.药物.Name = "药物";
+            // 
+            // 简码
+            // 
+            this.简码.HeaderText = "简码";
+            this.简码.Name = "简码";
+            // 
+            // 味经
+            // 
+            this.味经.HeaderText = "味经";
+            this.味经.Name = "味经";
+            // 
+            // 注意
+            // 
+            this.注意.HeaderText = "注意";
+            this.注意.Name = "注意";
+            // 
+            // 功效
+            // 
+            this.功效.HeaderText = "功效";
+            this.功效.Name = "功效";
+            // 
+            // 上限
+            // 
+            this.上限.HeaderText = "上限";
+            this.上限.Name = "上限";
+            // 
+            // 下限
+            // 
+            this.下限.HeaderText = "下限";
+            this.下限.Name = "下限";
+            // 
+            // 单位
+            // 
+            this.单位.HeaderText = "单位";
+            this.单位.Name = "单位";
+            // 
+            // 数量
+            // 
+            this.数量.HeaderText = "数量";
+            this.数量.Name = "数量";
+            // 
+            // 进价
+            // 
+            this.进价.HeaderText = "进价";
+            this.进价.Name = "进价";
+            // 
+            // 单价
+            // 
+            this.单价.HeaderText = "单价";
+            this.单价.Name = "单价";
+            // 
+            // 产地
+            // 
+            this.产地.HeaderText = "产地";
+            this.产地.Name = "产地";
             // 
             // skinTextBox2
             // 
@@ -157,7 +247,7 @@
             this.skinTextBox2.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
             this.skinTextBox2.SkinTxt.Location = new System.Drawing.Point(5, 5);
             this.skinTextBox2.SkinTxt.Name = "BaseText";
-            this.skinTextBox2.SkinTxt.Size = new System.Drawing.Size(82, 18);
+            this.skinTextBox2.SkinTxt.Size = new System.Drawing.Size(82, 22);
             this.skinTextBox2.SkinTxt.TabIndex = 0;
             this.skinTextBox2.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.skinTextBox2.SkinTxt.WaterText = "";
@@ -171,7 +261,7 @@
             this.skinLabel6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel6.Location = new System.Drawing.Point(454, 12);
             this.skinLabel6.Name = "skinLabel6";
-            this.skinLabel6.Size = new System.Drawing.Size(44, 17);
+            this.skinLabel6.Size = new System.Drawing.Size(48, 19);
             this.skinLabel6.TabIndex = 11;
             this.skinLabel6.Text = "经手人";
             // 
@@ -179,7 +269,7 @@
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(305, 9);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(105, 21);
+            this.dateTimePicker1.Size = new System.Drawing.Size(105, 25);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // skinLabel5
@@ -190,7 +280,7 @@
             this.skinLabel5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel5.Location = new System.Drawing.Point(234, 11);
             this.skinLabel5.Name = "skinLabel5";
-            this.skinLabel5.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel5.Size = new System.Drawing.Size(61, 19);
             this.skinLabel5.TabIndex = 9;
             this.skinLabel5.Text = "录单日期";
             // 
@@ -217,7 +307,7 @@
             this.skinTextBox1.SkinTxt.Font = new System.Drawing.Font("微软雅黑", 9.75F);
             this.skinTextBox1.SkinTxt.Location = new System.Drawing.Point(5, 5);
             this.skinTextBox1.SkinTxt.Name = "BaseText";
-            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(101, 18);
+            this.skinTextBox1.SkinTxt.Size = new System.Drawing.Size(101, 22);
             this.skinTextBox1.SkinTxt.TabIndex = 0;
             this.skinTextBox1.SkinTxt.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.skinTextBox1.SkinTxt.WaterText = "";
@@ -231,7 +321,7 @@
             this.skinLabel3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel3.Location = new System.Drawing.Point(20, 10);
             this.skinLabel3.Name = "skinLabel3";
-            this.skinLabel3.Size = new System.Drawing.Size(56, 17);
+            this.skinLabel3.Size = new System.Drawing.Size(61, 19);
             this.skinLabel3.TabIndex = 7;
             this.skinLabel3.Text = "单据编号";
             // 
@@ -243,7 +333,7 @@
             this.skinLabel2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.skinLabel2.Location = new System.Drawing.Point(-13, 35);
             this.skinLabel2.Name = "skinLabel2";
-            this.skinLabel2.Size = new System.Drawing.Size(758, 17);
+            this.skinLabel2.Size = new System.Drawing.Size(1059, 20);
             this.skinLabel2.TabIndex = 6;
             this.skinLabel2.Text = "_________________________________________________________________________________" +
                 "_____________________________________________________________________";
@@ -257,7 +347,7 @@
             this.skinLabel4.ForeColor = System.Drawing.Color.Black;
             this.skinLabel4.Location = new System.Drawing.Point(19, 86);
             this.skinLabel4.Name = "skinLabel4";
-            this.skinLabel4.Size = new System.Drawing.Size(0, 20);
+            this.skinLabel4.Size = new System.Drawing.Size(0, 24);
             this.skinLabel4.TabIndex = 5;
             // 
             // skinLabel1
@@ -292,63 +382,13 @@
             this.skinLabel8.Font = new System.Drawing.Font("微软雅黑", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel8.Location = new System.Drawing.Point(357, 107);
             this.skinLabel8.Name = "skinLabel8";
-            this.skinLabel8.Size = new System.Drawing.Size(122, 30);
+            this.skinLabel8.Size = new System.Drawing.Size(126, 30);
             this.skinLabel8.TabIndex = 27;
             this.skinLabel8.Text = "药 品 进 货";
             // 
-            // 产地
-            // 
-            this.产地.HeaderText = "产地";
-            this.产地.Name = "产地";
-            // 
-            // 单价
-            // 
-            this.单价.HeaderText = "单价";
-            this.单价.Name = "单价";
-            // 
-            // 进价
-            // 
-            this.进价.HeaderText = "进价";
-            this.进价.Name = "进价";
-            // 
-            // 数量
-            // 
-            this.数量.HeaderText = "数量";
-            this.数量.Name = "数量";
-            // 
-            // 单位
-            // 
-            this.单位.HeaderText = "单位";
-            this.单位.Name = "单位";
-            // 
-            // 药物
-            // 
-            this.药物.HeaderText = "药物";
-            this.药物.Name = "药物";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.药物,
-            this.单位,
-            this.数量,
-            this.进价,
-            this.单价,
-            this.产地});
-            this.dataGridView1.Enabled = false;
-            this.dataGridView1.Location = new System.Drawing.Point(38, 70);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 48;
-            this.dataGridView1.RowTemplate.Height = 400;
-            this.dataGridView1.Size = new System.Drawing.Size(671, 301);
-            this.dataGridView1.TabIndex = 13;
-            // 
             // add_drugs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(818, 619);
@@ -363,6 +403,7 @@
             this.Controls.Add(this.skinPanel1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
             this.MaxSize = new System.Drawing.Size(0, 0);
             this.MiniDownBack = global::WinForm.Properties.Resources.MiniDownBack;
             this.MiniMouseBack = global::WinForm.Properties.Resources.MiniMouseBack;
@@ -372,11 +413,11 @@
             this.Load += new System.EventHandler(this.添加药品_Load);
             this.skinPanel1.ResumeLayout(false);
             this.skinPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.skinTextBox2.ResumeLayout(false);
             this.skinTextBox2.PerformLayout();
             this.skinTextBox1.ResumeLayout(false);
             this.skinTextBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -402,6 +443,12 @@
         private CCWin.SkinControl.SkinLabel skinLabel8;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn 药物;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 简码;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 味经;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 注意;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 功效;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 上限;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 下限;
         private System.Windows.Forms.DataGridViewTextBoxColumn 单位;
         private System.Windows.Forms.DataGridViewTextBoxColumn 数量;
         private System.Windows.Forms.DataGridViewTextBoxColumn 进价;

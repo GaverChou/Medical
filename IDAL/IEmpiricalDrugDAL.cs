@@ -10,6 +10,7 @@ namespace IDAL
     {
         DataTable GetDrugListByID();
         DataTable GetDrugListByAb(string ab);
+        DataTable GetDrugListByName(string name);
         bool DeleteByID(int did);
         bool Add();    //传入值
         bool Update(); //传入值

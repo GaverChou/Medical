@@ -70,5 +70,20 @@ namespace BLL
                 return -1;
             }
         }
+
+        public bool AddDrug(Model.Drug drug,out string msg)
+        {
+            try
+            {
+                iDrug.Add(drug);
+            }
+            catch (Exception exp)
+            {
+                msg = exp.Message;
+                return false;
+            }
+            msg = "成功";
+            return true;
+        }
     }
 }

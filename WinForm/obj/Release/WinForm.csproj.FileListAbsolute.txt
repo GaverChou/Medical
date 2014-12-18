@@ -19,12 +19,9 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.Patient.resources
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.Properties.Resources.resources
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.RegisterUI.resources
-C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.药品管理.resources
-C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.验方管理.resources
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.pdb
-C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.添加药品.resources
 C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\WinForm.dll
 C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\WinForm.pdb
 C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\bin\Release\BLL.dll
@@ -54,3 +51,7 @@ C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\Ge
 C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.dll
 C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.pdb
 C:\Users\Administrator\Desktop\数据库大作业\Medical\WinForm\obj\Release\WinForm.usersetting.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.add_drugs.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.drugs_management.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.prescription_management.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\Medical\WinForm\obj\Release\WinForm.usersetting.resources

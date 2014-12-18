@@ -95,14 +95,13 @@
             this.tx_count.Location = new System.Drawing.Point(543, 44);
             this.tx_count.Name = "tx_count";
             this.tx_count.ReadOnly = true;
-            this.tx_count.Size = new System.Drawing.Size(100, 21);
+            this.tx_count.Size = new System.Drawing.Size(100, 25);
             this.tx_count.TabIndex = 10;
             this.tx_count.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tx_count.WaterText = "";
             // 
             // tb_count
             // 
-<<<<<<< HEAD:WinForm/药品管理.designer.cs
             this.tb_count.Enabled = false;
             this.tb_count.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tb_count.Location = new System.Drawing.Point(312, 44);
@@ -112,22 +111,12 @@
             this.tb_count.TabIndex = 9;
             this.tb_count.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_count.WaterText = "";
-=======
-            this.skinWaterTextBox1.Location = new System.Drawing.Point(312, 44);
-            this.skinWaterTextBox1.Name = "skinWaterTextBox1";
-            this.skinWaterTextBox1.ReadOnly = true;
-            this.skinWaterTextBox1.Size = new System.Drawing.Size(100, 21);
-            this.skinWaterTextBox1.TabIndex = 9;
-            this.skinWaterTextBox1.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.skinWaterTextBox1.WaterText = "";
-            this.skinWaterTextBox1.TextChanged += new System.EventHandler(this.skinWaterTextBox1_TextChanged);
->>>>>>> 5cb71995bace99440b7c31fc740696fc5e363381:WinForm/drugs_management.designer.cs
             // 
             // tx_search
             // 
             this.tx_search.Location = new System.Drawing.Point(69, 89);
             this.tx_search.Name = "tx_search";
-            this.tx_search.Size = new System.Drawing.Size(84, 21);
+            this.tx_search.Size = new System.Drawing.Size(84, 25);
             this.tx_search.TabIndex = 8;
             this.tx_search.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tx_search.WaterText = "";
@@ -210,7 +199,7 @@
             this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel1.Location = new System.Drawing.Point(346, 97);
             this.skinLabel1.Name = "skinLabel1";
-            this.skinLabel1.Size = new System.Drawing.Size(180, 30);
+            this.skinLabel1.Size = new System.Drawing.Size(186, 30);
             this.skinLabel1.TabIndex = 7;
             this.skinLabel1.Text = "药 材 库 存 状 况";
             // 
@@ -264,7 +253,7 @@
             // 
             // drugs_management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -276,12 +265,13 @@
             this.Controls.Add(this.skinLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.skinPanel1);
+            this.MaximizeBox = false;
             this.MaxSize = new System.Drawing.Size(0, 0);
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "drugs_management";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "药品管理";
-            this.Load += new System.EventHandler(this.药品管理_Load);
+            this.Load += new System.EventHandler(this.drugs_management_Load);
             this.skinPanel1.ResumeLayout(false);
             this.skinPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drugs_dvg)).EndInit();

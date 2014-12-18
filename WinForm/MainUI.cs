@@ -18,6 +18,9 @@ namespace WinForm
         Font printFont;
         BLL.DrugBLL instance = BLL.DrugBLL.GetDrugBLLL();
         BLL.PatientBLL patientInstance = BLL.PatientBLL.GetPatientBLL();
+        BLL.EmptabBLL empBLL = BLL.EmptabBLL.GetEmptabBLL();
+        BLL.EmpDrugBLL empDrugBLL = BLL.EmpDrugBLL.GetDrugBLLL();
+
         public MainUI()
         {
             InitializeComponent();
@@ -25,12 +28,12 @@ namespace WinForm
 
         private void MainUI_Load(object sender, EventArgs e)
         {
-            this.bingli_rbx.LoadFile(@"C:\sample.rtf", RichTextBoxStreamType.RichText);
+            this.bingli_rbx.LoadFile(@"sample.rtf", RichTextBoxStreamType.RichText);
             this.dv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dv_CellClick);
             this.lb_username.Text = UserHelper.userName;
             tb_old.DataBindings.Add("Text", tb_pname, "Text");//bangding
-            this.skinComboBox1.DataSource = instance.GetAllDrug();
-            skinComboBox1.DisplayMember = "drug_id";//这是text值
+            this.cm_emp.DataSource = empBLL.GetAllEmpTab();
+            cm_emp.DisplayMember = "em_name";//这是text值
         }
 
         private void dv_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -125,7 +128,6 @@ namespace WinForm
             if (patientInstance.AddPatient(patient, patient_tab, out msg))
             {
                 MessageBoxBuilder.buildbox("保存成功！", "ok");
-                pictureBox1.Image = null;
             }
             else if (!"".Equals(msg))
             {
@@ -135,6 +137,7 @@ namespace WinForm
             {
                 MessageBoxBuilder.buildbox("未知错误！插入失败!","错误");
             }
+            pictureBox1.Image = null;
         }
 
         private void skinButton2_Click(object sender, EventArgs e)
@@ -169,7 +172,6 @@ namespace WinForm
             pictureBox1.Image = Image.FromFile(FileName, true);
         }
 
-<<<<<<< HEAD
         private void drug_tab_dv_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
             count = e.RowIndex;
@@ -207,15 +209,17 @@ namespace WinForm
             //    }
             //}
         }
-=======
         private void skinButton1_Click(object sender, EventArgs e)
         {
             usersetting us = new usersetting();
             us.Show();
         }
 
+        private void cm_emp_SelectedValueChanged(object sender, EventArgs e)
+        {
+            this.label7.Text = this.cm_emp.Text;
+            this.drug_tab_dv.DataSource = empDrugBLL.GetEmpDrugsByName(this.cm_emp.Text);
+        }
 
-        
->>>>>>> 5cb71995bace99440b7c31fc740696fc5e363381
     }
 }

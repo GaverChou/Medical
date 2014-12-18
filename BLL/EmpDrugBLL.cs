@@ -33,5 +33,10 @@ namespace BLL
         {
             return iEmpDrug.GetDrugListByAb(ab);
         }
+
+        public DataTable GetEmpDrugsByName(string Name)
+        {
+            return iEmpDrug.GetDrugListByName(Name);
+        }
     }
 }

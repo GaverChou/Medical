@@ -516,7 +516,6 @@
             this.text_from.TabIndex = 24;
             this.text_from.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_from.WaterText = "";
-            this.text_from.TextChanged += new System.EventHandler(this.text_from_TextChanged);
             // 
             // text_code
             // 

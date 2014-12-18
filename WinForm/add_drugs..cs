@@ -20,16 +20,33 @@ namespace WinForm
         {
 
         }
-
+        BLL.DrugBLL drugbll = BLL.DrugBLL.GetDrugBLLL();
         private void bt_save_Click(object sender, EventArgs e)
         {
-
+            Model.Drug drug = new Model.Drug();
+            string msg = "";
+            for (int i = 0; i < this.dataGridView1.Rows.Count-1; i++)
+            {
+                drug.Drug_ab = dataGridView1.Rows[i].Cells["简码"].Value.ToString();
+                drug.Drug_name = dataGridView1.Rows[i].Cells["药物"].Value.ToString();
+                drug.Effect = dataGridView1.Rows[i].Cells["功效"].Value.ToString();
+                drug.From_where = dataGridView1.Rows[i].Cells["产地"].Value.ToString();
+                drug.In_price = Double.Parse(dataGridView1.Rows[i].Cells["进价"].Value.ToString());
+                drug.Notice = dataGridView1.Rows[i].Cells["注意"].Value.ToString();
+                drug.Stock =  Double.Parse(dataGridView1.Rows[i].Cells["数量"].Value.ToString()); 
+                drug.Unit = dataGridView1.Rows[i].Cells["单位"].Value.ToString();
+                drug.Unit_price =  Double.Parse(dataGridView1.Rows[i].Cells["单价"].Value.ToString());
+                drug.Use_down =  Double.Parse(dataGridView1.Rows[i].Cells["上限"].Value.ToString());
+                drug.Use_up = Double.Parse(dataGridView1.Rows[i].Cells["下限"].Value.ToString());
+                drug.Wei_jin = dataGridView1.Rows[i].Cells["味经"].Value.ToString();
+                if (!drugbll.AddDrug(drug,out msg))
+                {
+                    MessageBoxBuilder.buildErrbox("插入第"+i+"出错！"+msg);
+                }
+            }
+            MessageBoxBuilder.buildbox("插入成功！","ok");
         }
 
-        private void skinPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void bt_cancel_Click(object sender, EventArgs e)
         {
