@@ -15,10 +15,16 @@ namespace WinForm
         {
             InitializeComponent();
         }
+        BLL.UserBLL userBLL = BLL.UserBLL.GetUserBLL();
 
         private void usersetting_Load(object sender, EventArgs e)
         {
-
+            Model.UserData data = userBLL.GetUserData(UserHelper.id);
+            tb_address.Text = data.Address;
+            tb_department.Text = data.Department;
+            tb_gender.Text = data.Gender;
+            tb_idcard.Text = data.Idcard;
+            tb_name.Text = data.Username;
         }
 
         private void userName_txb_TextChanged(object sender, EventArgs e)
@@ -32,11 +38,11 @@ namespace WinForm
             Model.UserData userdata = new Model.UserData();
 
 
-            userdata.Username = this.username_ttb.Text;
-            userdata.Department = this.department_ttb.Text;
-            userdata.Address = this.address_ttb.Text;
-            userdata.Gender = this.sex_ttb.Text;
-            userdata.Idcard= this.idcard_ttb.Text;
+            userdata.Username = this.tb_name.Text;
+            userdata.Department = this.tb_department.Text;
+            userdata.Address = this.tb_address.Text;
+            userdata.Gender = this.tb_gender.Text;
+            userdata.Idcard = this.tb_idcard.Text;
            
             this.Close();
         }

@@ -256,7 +256,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.CaptionFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.CaptionFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.ClientSize = new System.Drawing.Size(818, 619);
             this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
             this.Controls.Add(this.skinLabel6);
@@ -265,6 +265,7 @@
             this.Controls.Add(this.skinLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.skinPanel1);
+            this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MaximizeBox = false;
             this.MaxSize = new System.Drawing.Size(0, 0);
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;

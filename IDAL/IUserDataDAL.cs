@@ -12,5 +12,7 @@ namespace IDAL
         bool addUserData(Model.UserData userData);
 
         bool updateUserData(Model.UserData userData);
+
+        Model.UserData GetDataById(int uid);
     }
 }

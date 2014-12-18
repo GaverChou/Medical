@@ -34,6 +34,7 @@ namespace WinForm
             tb_old.DataBindings.Add("Text", tb_pname, "Text");//bangding
             this.cm_emp.DataSource = empBLL.GetAllEmpTab();
             cm_emp.DisplayMember = "em_name";//这是text值
+            cm_emp.ValueMember = "em_name";
         }
 
         private void dv_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -217,7 +218,6 @@ namespace WinForm
 
         private void cm_emp_SelectedValueChanged(object sender, EventArgs e)
         {
-            this.label7.Text = this.cm_emp.Text;
             this.drug_tab_dv.DataSource = empDrugBLL.GetEmpDrugsByName(this.cm_emp.Text);
         }
 

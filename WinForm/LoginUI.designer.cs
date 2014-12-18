@@ -45,7 +45,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(107, 63);
             this.label1.Name = "label1";
@@ -55,7 +55,7 @@
             // 
             // userName_txb
             // 
-            this.userName_txb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.userName_txb.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.userName_txb.Location = new System.Drawing.Point(29, 99);
             this.userName_txb.Name = "userName_txb";
             this.userName_txb.Size = new System.Drawing.Size(202, 31);
@@ -65,7 +65,7 @@
             // 
             // passwd_txb
             // 
-            this.passwd_txb.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.passwd_txb.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.passwd_txb.Location = new System.Drawing.Point(29, 136);
             this.passwd_txb.Name = "passwd_txb";
             this.passwd_txb.Size = new System.Drawing.Size(202, 31);
@@ -81,7 +81,7 @@
             this.remenber_ckb.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.remenber_ckb.DownBack = null;
             this.remenber_ckb.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.remenber_ckb.Font = new System.Drawing.Font("微软雅黑", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.remenber_ckb.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.remenber_ckb.ForeColor = System.Drawing.Color.FloralWhite;
             this.remenber_ckb.Location = new System.Drawing.Point(29, 173);
             this.remenber_ckb.MouseBack = null;
@@ -90,7 +90,7 @@
             this.remenber_ckb.SelectedDownBack = null;
             this.remenber_ckb.SelectedMouseBack = null;
             this.remenber_ckb.SelectedNormlBack = null;
-            this.remenber_ckb.Size = new System.Drawing.Size(81, 22);
+            this.remenber_ckb.Size = new System.Drawing.Size(90, 25);
             this.remenber_ckb.TabIndex = 3;
             this.remenber_ckb.Text = "记住密码";
             this.remenber_ckb.UseVisualStyleBackColor = false;
@@ -102,7 +102,7 @@
             this.login_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.login_btn.DownBack = null;
             this.login_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
-            this.login_btn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.login_btn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.login_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.login_btn.Location = new System.Drawing.Point(29, 205);
             this.login_btn.MouseBack = global::WinForm.Properties.Resources.blue_btn_normal;
@@ -130,7 +130,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label3.Location = new System.Drawing.Point(72, 60);
             this.label3.Name = "label3";
@@ -143,11 +143,11 @@
             this.forget_lb.AutoSize = true;
             this.forget_lb.BackColor = System.Drawing.Color.Transparent;
             this.forget_lb.BorderColor = System.Drawing.Color.White;
-            this.forget_lb.Font = new System.Drawing.Font("微软雅黑", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.forget_lb.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.forget_lb.ForeColor = System.Drawing.Color.DimGray;
-            this.forget_lb.Location = new System.Drawing.Point(169, 175);
+            this.forget_lb.Location = new System.Drawing.Point(157, 175);
             this.forget_lb.Name = "forget_lb";
-            this.forget_lb.Size = new System.Drawing.Size(62, 17);
+            this.forget_lb.Size = new System.Drawing.Size(72, 20);
             this.forget_lb.TabIndex = 8;
             this.forget_lb.Text = "忘记密码?";
             this.forget_lb.Click += new System.EventHandler(this.forget_lb_Click);
@@ -159,7 +159,7 @@
             this.register_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.register_btn.DownBack = null;
             this.register_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
-            this.register_btn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.register_btn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.register_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.register_btn.Location = new System.Drawing.Point(153, 205);
             this.register_btn.MouseBack = global::WinForm.Properties.Resources.blue_btn_normal;

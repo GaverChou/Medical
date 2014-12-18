@@ -140,5 +140,10 @@ namespace BLL
             }
             return true;
         }
+
+        public UserData GetUserData(int uid)
+        {
+            return iUserData.GetDataById(uid);
+        }
     }
 }

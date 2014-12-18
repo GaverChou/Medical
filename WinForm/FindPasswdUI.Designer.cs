@@ -66,7 +66,7 @@
             this.back_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.back_btn.DownBack = null;
             this.back_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
-            this.back_btn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.back_btn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.back_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.back_btn.Location = new System.Drawing.Point(168, 276);
             this.back_btn.MouseBack = global::WinForm.Properties.Resources.blue_btn_normal;
@@ -85,7 +85,7 @@
             this.ok_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.ok_btn.DownBack = null;
             this.ok_btn.DrawType = CCWin.SkinControl.DrawStyle.Img;
-            this.ok_btn.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ok_btn.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.ok_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ok_btn.Location = new System.Drawing.Point(65, 276);
             this.ok_btn.MouseBack = global::WinForm.Properties.Resources.blue_btn_normal;
@@ -99,40 +99,40 @@
             // 
             // pass2_txb
             // 
-            this.pass2_txb.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pass2_txb.Font = new System.Drawing.Font("微软雅黑", 15.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.pass2_txb.Location = new System.Drawing.Point(65, 219);
             this.pass2_txb.Name = "pass2_txb";
-            this.pass2_txb.Size = new System.Drawing.Size(181, 29);
+            this.pass2_txb.Size = new System.Drawing.Size(181, 28);
             this.pass2_txb.TabIndex = 3;
             this.pass2_txb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.pass2_txb.WaterText = "再次确认密码";
             // 
             // pass1_txb
             // 
-            this.pass1_txb.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.pass1_txb.Font = new System.Drawing.Font("微软雅黑", 15.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.pass1_txb.Location = new System.Drawing.Point(65, 158);
             this.pass1_txb.Name = "pass1_txb";
-            this.pass1_txb.Size = new System.Drawing.Size(181, 29);
+            this.pass1_txb.Size = new System.Drawing.Size(181, 28);
             this.pass1_txb.TabIndex = 2;
             this.pass1_txb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.pass1_txb.WaterText = "请输入密码";
             // 
             // idcard_txb
             // 
-            this.idcard_txb.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.idcard_txb.Font = new System.Drawing.Font("微软雅黑", 15.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.idcard_txb.Location = new System.Drawing.Point(65, 103);
             this.idcard_txb.Name = "idcard_txb";
-            this.idcard_txb.Size = new System.Drawing.Size(181, 29);
+            this.idcard_txb.Size = new System.Drawing.Size(181, 28);
             this.idcard_txb.TabIndex = 1;
             this.idcard_txb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.idcard_txb.WaterText = "请输入身份证号";
             // 
             // name_txb
             // 
-            this.name_txb.Font = new System.Drawing.Font("微软雅黑", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.name_txb.Font = new System.Drawing.Font("微软雅黑", 15.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.name_txb.Location = new System.Drawing.Point(65, 48);
             this.name_txb.Name = "name_txb";
-            this.name_txb.Size = new System.Drawing.Size(181, 29);
+            this.name_txb.Size = new System.Drawing.Size(181, 28);
             this.name_txb.TabIndex = 0;
             this.name_txb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.name_txb.WaterText = "请输入姓名";
@@ -141,11 +141,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(140, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 27);
+            this.label1.Size = new System.Drawing.Size(152, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "用户安全中心";
             // 

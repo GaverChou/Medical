@@ -66,5 +66,40 @@ namespace SQlDAL
         {
             return false;
         }
+
+
+        public Model.UserData GetDataById(int uid)
+        {
+            Model.UserData data = new Model.UserData();
+            StringBuilder sqlStr = new StringBuilder();
+            sqlStr.Append("select * from userData where uid=@uid");
+            SqlParameter[] parameters = { new SqlParameter("@uid", SqlDbType.Int) };
+            parameters[0].Value = uid;
+            DataTable dt = SqlDbHelper.ExecuteDataTable(sqlStr.ToString(), CommandType.Text, parameters);
+            if (dt.Rows.Count > 0)
+            {
+                if (dt.Rows[0]["idcard"] != null && dt.Rows[0]["idcard"].ToString() != "")
+                {
+                    data.Idcard = dt.Rows[0]["idcard"].ToString();
+                }
+                if (dt.Rows[0]["gender"] != null && dt.Rows[0]["gender"].ToString() != "")
+                {
+                    data.Gender = dt.Rows[0]["gender"].ToString();
+                }
+                if (dt.Rows[0]["department"] != null && dt.Rows[0]["department"].ToString() != "")
+                {
+                    data.Department = dt.Rows[0]["department"].ToString();
+                }
+                if (dt.Rows[0]["address"] != null && dt.Rows[0]["address"].ToString() != "")
+                {
+                    data.Address = dt.Rows[0]["address"].ToString();
+                }
+                if (dt.Rows[0]["username"] != null && dt.Rows[0]["username"].ToString() != "")
+                {
+                    data.Username = dt.Rows[0]["username"].ToString();
+                }
+            }
+            return data;
+        }
     }
 }
