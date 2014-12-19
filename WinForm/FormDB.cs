@@ -40,18 +40,18 @@ namespace WinForm
         {
             if (backupPath == "")
             {
-                MessageBox.Show("请先选择数据库备份路径", "提示");
+                MessageBoxBuilder.buildbox("请先选择数据库备份路径", "提示");
                 return;
             }
             try
             {
                 this.Cursor = Cursors.WaitCursor;
                 bll.BackDb(backupPath);
-                MessageBox.Show("数据库备份成功");
+                MessageBoxBuilder.buildbox("数据库备份成功", "提示");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBoxBuilder.buildErrbox(ex.Message);
             }
             finally
             {
@@ -76,18 +76,18 @@ namespace WinForm
         {
             if (restorePath == "")
             {
-                MessageBox.Show("请先选择数据库恢复路径", "提示");
+                MessageBoxBuilder.buildbox("请先选择数据库恢复路径", "提示");
                 return;
             }           
             try
             {
                 this.Cursor = Cursors.WaitCursor;
                 bll.RestoreDb(restorePath);
-                MessageBox.Show("数据库恢复成功");
+                MessageBoxBuilder.buildbox("数据库恢复成功", "提示");
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBoxBuilder.buildErrbox(ex.Message);
             }
             finally
             {                

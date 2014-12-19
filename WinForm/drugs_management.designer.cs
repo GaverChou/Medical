@@ -95,7 +95,7 @@
             this.tx_count.Location = new System.Drawing.Point(543, 44);
             this.tx_count.Name = "tx_count";
             this.tx_count.ReadOnly = true;
-            this.tx_count.Size = new System.Drawing.Size(100, 25);
+            this.tx_count.Size = new System.Drawing.Size(100, 21);
             this.tx_count.TabIndex = 10;
             this.tx_count.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tx_count.WaterText = "";
@@ -107,16 +107,17 @@
             this.tb_count.Location = new System.Drawing.Point(312, 44);
             this.tb_count.Name = "tb_count";
             this.tb_count.ReadOnly = true;
-            this.tb_count.Size = new System.Drawing.Size(100, 27);
+            this.tb_count.Size = new System.Drawing.Size(100, 23);
             this.tb_count.TabIndex = 9;
             this.tb_count.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_count.WaterText = "";
             // 
             // tx_search
             // 
+            this.tx_search.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
             this.tx_search.Location = new System.Drawing.Point(69, 89);
             this.tx_search.Name = "tx_search";
-            this.tx_search.Size = new System.Drawing.Size(84, 25);
+            this.tx_search.Size = new System.Drawing.Size(84, 27);
             this.tx_search.TabIndex = 8;
             this.tx_search.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tx_search.WaterText = "";
@@ -144,7 +145,7 @@
             this.skinLabel4.BorderColor = System.Drawing.Color.White;
             this.skinLabel4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel4.ForeColor = System.Drawing.Color.Black;
-            this.skinLabel4.Location = new System.Drawing.Point(1, 89);
+            this.skinLabel4.Location = new System.Drawing.Point(1, 92);
             this.skinLabel4.Name = "skinLabel4";
             this.skinLabel4.Size = new System.Drawing.Size(69, 20);
             this.skinLabel4.TabIndex = 5;
@@ -199,7 +200,7 @@
             this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel1.Location = new System.Drawing.Point(346, 97);
             this.skinLabel1.Name = "skinLabel1";
-            this.skinLabel1.Size = new System.Drawing.Size(186, 30);
+            this.skinLabel1.Size = new System.Drawing.Size(180, 30);
             this.skinLabel1.TabIndex = 7;
             this.skinLabel1.Text = "药 材 库 存 状 况";
             // 
@@ -253,7 +254,7 @@
             // 
             // drugs_management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);

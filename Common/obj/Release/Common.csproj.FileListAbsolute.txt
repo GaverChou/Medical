@@ -16,3 +16,11 @@ C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\obj\Release\Res
 C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\obj\Release\Common.dll
 C:\Users\Administrator\Desktop\数据库大作业\Medical\Common\obj\Release\Common.pdb
 >>>>>>> 5cb71995bace99440b7c31fc740696fc5e363381
+C:\Documents and Settings\gdufs\桌面\Medical\Common\bin\Release\Common.dll
+C:\Documents and Settings\gdufs\桌面\Medical\Common\bin\Release\Common.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\Common\bin\Release\Model.dll
+C:\Documents and Settings\gdufs\桌面\Medical\Common\bin\Release\SkinForm.dll
+C:\Documents and Settings\gdufs\桌面\Medical\Common\bin\Release\Model.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\Common\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gdufs\桌面\Medical\Common\obj\Release\Common.dll
+C:\Documents and Settings\gdufs\桌面\Medical\Common\obj\Release\Common.pdb

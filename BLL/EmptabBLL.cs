@@ -38,5 +38,34 @@ namespace BLL
         {
             return iEmpiricalDAL.GetEmpDataListByAb(ab);
         }
+
+        public bool AddEmpTab(Model.EmpTab emptab,out string msg)
+        {
+            msg = "";
+            try
+            {
+                return iEmpiricalDAL.Add(emptab);
+            }
+            catch(Exception exp)
+            {
+                msg = exp.Message;
+                return false;
+            }
+        }
+
+        public bool DeleteEmp(string id, out string msg)
+        {
+            msg = "";
+            try
+            {
+                msg = "删除成功！";
+                return iEmpiricalDAL.DeleteByID(id);
+            }
+            catch (Exception exp)
+            {
+                msg = exp.Message;
+                return false;
+            }
+        }
     }
 }

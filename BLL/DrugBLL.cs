@@ -41,7 +41,14 @@ namespace BLL
 
         public double GetDrugsCount()
         {
-            return iDrug.GetDurgsCount();
+            try
+            {
+                return iDrug.GetDurgsCount();
+            }
+            catch
+            {
+                return 0;
+            }
         }
 
         public bool DeleteById(int drug_id, out string msg)

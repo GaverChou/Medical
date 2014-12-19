@@ -32,6 +32,7 @@ namespace WinForm
             this.dv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dv_CellClick);
             this.lb_username.Text = UserHelper.userName;
             tb_old.DataBindings.Add("Text", tb_pname, "Text");//bangding
+            this.drug_tab_dv.AutoGenerateColumns = false;
             this.cm_emp.DataSource = empBLL.GetAllEmpTab();
             cm_emp.DisplayMember = "em_name";//这是text值
             cm_emp.ValueMember = "em_name";
@@ -138,7 +139,7 @@ namespace WinForm
             {
                 MessageBoxBuilder.buildbox("未知错误！插入失败!","错误");
             }
-            pictureBox1.Image = null;
+            pictureBox1.Image = Image.FromFile(FileName, true);
         }
 
         private void skinButton2_Click(object sender, EventArgs e)
@@ -170,7 +171,8 @@ namespace WinForm
             //从显示文件对话框中选定图像文件赋给变量FileName 
             FileName = opFileDial.FileName;
             //用PictureBox控件显示选中的图像文件 
-            pictureBox1.Image = Image.FromFile(FileName, true);
+            if(!"".Equals(FileName)&&FileName!=null)
+                pictureBox1.Image = Image.FromFile(FileName, true);
         }
 
         private void drug_tab_dv_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)

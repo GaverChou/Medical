@@ -12,3 +12,10 @@ C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\bin\Release\Model
 C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\obj\Release\IDAL.dll
 C:\Users\Administrator\Desktop\数据库大作业\Medical\IDAL\obj\Release\IDAL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\IDAL\bin\Release\IDAL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\IDAL\bin\Release\IDAL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\IDAL\bin\Release\Model.dll
+C:\Documents and Settings\gdufs\桌面\Medical\IDAL\bin\Release\Model.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\IDAL\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gdufs\桌面\Medical\IDAL\obj\Release\IDAL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\IDAL\obj\Release\IDAL.pdb

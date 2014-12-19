@@ -11,14 +11,14 @@ namespace SQlDAL
     public partial class EmpiricalDALImp:IEmpiricalDAL
     {
 
-        public bool DeleteByID(int did)
+        public bool DeleteByID(string name)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("delete from [empirical] where em_id=@em_id");
+            strSql.Append("delete from [empirical] where em_name=@em_id");
             SqlParameter[] parameters = {
-                                            new SqlParameter("@em_id ",SqlDbType.Int)
+                                            new SqlParameter("@em_id ",SqlDbType.VarChar,16)
                                         };
-            parameters[0].Value = did;
+            parameters[0].Value = name;
             int row = SqlDbHelper.ExecuteNonQuery(strSql.ToString(), CommandType.Text, parameters);
             if (row > 0)
             {

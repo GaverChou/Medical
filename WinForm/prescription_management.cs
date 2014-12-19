@@ -114,7 +114,15 @@ namespace WinForm
 
         private void bt_confirm_Click(object sender, EventArgs e)
         {
-            ParseEmpTab();
+            if (this.bt_confirm.Text.Trim()=="增加")
+            {
+                this.bt_confirm.Text = "确定";
+            }
+            else if (this.bt_confirm.Text.Trim() == ("确定"))
+            {
+                Clear();
+                ParseEmpTab();
+            }
         }
 
         private void ParseEmpTab()
@@ -128,10 +136,12 @@ namespace WinForm
             empTab.Em_ab = this.text_code.Text;
             empTab.Minus_and_add = "无";
             empTab.Apply = "无";
-            if (empTabBLL.UpdateEmpTab(empTab))
+            string msg = "";
+            if (empTabBLL.AddEmpTab(empTab,out msg))
             {
                 MessageBoxBuilder.buildbox("更新成功！","ok");
             }
+            this.bt_confirm.Text = "增加";
             Fill();
         }
         string ab = "";
@@ -144,7 +154,15 @@ namespace WinForm
 
         private void bt_delete_Click(object sender, EventArgs e)
         {
-
+            string msg = "";
+            if (empTabBLL.DeleteEmp(text_name.Text.Trim(), out msg))
+            {
+                MessageBoxBuilder.buildbox(msg, "ok");
+            }
+            else
+            {
+                MessageBoxBuilder.buildErrbox(msg);
+            }
         }
 
     }

@@ -120,8 +120,9 @@ namespace WinForm
             opFileDial.ShowDialog();
             //从显示文件对话框中选定图像文件赋给变量FileName 
             FileName = opFileDial.FileName;
-            //用PictureBox控件显示选中的图像文件 
-            pb_patient.Image = Image.FromFile(FileName,true);
+            //用PictureBox控件显示选中的图像文件
+            if(!"".Equals(FileName)&&FileName!=null) 
+                         pb_patient.Image = Image.FromFile(FileName,true);
             
             //if (BLL.PatientBLL.GetPatientBLL().UpdatePatientPhoto(pid, B))
             //{
@@ -160,8 +161,8 @@ namespace WinForm
                if (BLL.PatientBLL.GetPatientBLL().UpdatePatientPhoto(pid, b))
                {
                    MessageBoxBuilder.buildbox("上传成功！","ok");
-                   pb_patient.Image = null;
                    Fill();
+                   pb_patient.Image = Image.FromFile(FileName, true);
                }
                else
                {

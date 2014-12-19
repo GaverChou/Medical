@@ -24,3 +24,16 @@ C:\Users\Administrator\Desktop\数据库大作业\Medical\BLL\bin\Release\Model.
 C:\Users\Administrator\Desktop\数据库大作业\Medical\BLL\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\数据库大作业\Medical\BLL\obj\Release\BLL.dll
 C:\Users\Administrator\Desktop\数据库大作业\Medical\BLL\obj\Release\BLL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\BLL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\BLL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\Common.dll
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\DALFactory.dll
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\IDAL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\Model.dll
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\Common.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\DALFactory.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\IDAL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\bin\Release\Model.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\obj\Release\BLL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\BLL\obj\Release\BLL.pdb

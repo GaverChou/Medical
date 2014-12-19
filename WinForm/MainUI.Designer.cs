@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainUI));
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.tb_jishu = new CCWin.SkinControl.SkinWaterTextBox();
@@ -42,7 +42,6 @@
             this.bingli_rbx = new CCWin.SkinControl.SkinRichTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cm_emp = new CCWin.SkinControl.SkinComboBox();
-            this.tb_yanfang = new CCWin.SkinControl.SkinWaterTextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.drug_tab_dv = new System.Windows.Forms.DataGridView();
@@ -149,7 +148,6 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.cm_emp);
-            this.groupBox2.Controls.Add(this.tb_yanfang);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.drug_tab_dv);
@@ -164,23 +162,14 @@
             // cm_emp
             // 
             this.cm_emp.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cm_emp.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.cm_emp.FormattingEnabled = true;
-            this.cm_emp.Location = new System.Drawing.Point(189, 260);
+            this.cm_emp.Location = new System.Drawing.Point(78, 262);
             this.cm_emp.Name = "cm_emp";
-            this.cm_emp.Size = new System.Drawing.Size(121, 30);
+            this.cm_emp.Size = new System.Drawing.Size(121, 28);
             this.cm_emp.TabIndex = 24;
             this.cm_emp.WaterText = "";
             this.cm_emp.SelectedValueChanged += new System.EventHandler(this.cm_emp_SelectedValueChanged);
-            // 
-            // tb_yanfang
-            // 
-            this.tb_yanfang.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tb_yanfang.Location = new System.Drawing.Point(73, 263);
-            this.tb_yanfang.Name = "tb_yanfang";
-            this.tb_yanfang.Size = new System.Drawing.Size(100, 27);
-            this.tb_yanfang.TabIndex = 9;
-            this.tb_yanfang.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.tb_yanfang.WaterText = "";
             // 
             // label14
             // 
@@ -221,14 +210,14 @@
             this.drug_tab_dv.GridColor = System.Drawing.SystemColors.Desktop;
             this.drug_tab_dv.Location = new System.Drawing.Point(3, 26);
             this.drug_tab_dv.Name = "drug_tab_dv";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.PowderBlue;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.drug_tab_dv.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.PowderBlue;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("微软雅黑", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.drug_tab_dv.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.drug_tab_dv.RowHeadersVisible = false;
             this.drug_tab_dv.RowTemplate.Height = 23;
             this.drug_tab_dv.Size = new System.Drawing.Size(536, 235);
@@ -239,45 +228,50 @@
             // 
             // drug_ab
             // 
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_ab.DefaultCellStyle = dataGridViewCellStyle8;
+            this.drug_ab.DataPropertyName = "drug_ab";
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("微软雅黑", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_ab.DefaultCellStyle = dataGridViewCellStyle1;
             this.drug_ab.HeaderText = "简码";
             this.drug_ab.Name = "drug_ab";
             this.drug_ab.Width = 70;
             // 
             // drug_name
             // 
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_name.DefaultCellStyle = dataGridViewCellStyle9;
+            this.drug_name.DataPropertyName = "drug_name";
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_name.DefaultCellStyle = dataGridViewCellStyle2;
             this.drug_name.HeaderText = "名称";
             this.drug_name.Name = "drug_name";
             // 
             // drug_count
             // 
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.drug_count.DefaultCellStyle = dataGridViewCellStyle10;
+            this.drug_count.DataPropertyName = "drug_count";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.drug_count.DefaultCellStyle = dataGridViewCellStyle3;
             this.drug_count.HeaderText = "数量";
             this.drug_count.Name = "drug_count";
             // 
             // unit
             // 
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.unit.DefaultCellStyle = dataGridViewCellStyle11;
+            this.unit.DataPropertyName = "unit";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.unit.DefaultCellStyle = dataGridViewCellStyle4;
             this.unit.HeaderText = "单位";
             this.unit.Name = "unit";
             this.unit.Width = 70;
             // 
             // unit_money
             // 
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.unit_money.DefaultCellStyle = dataGridViewCellStyle12;
+            this.unit_money.DataPropertyName = "unit_price";
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.unit_money.DefaultCellStyle = dataGridViewCellStyle5;
             this.unit_money.HeaderText = "单价";
             this.unit_money.Name = "unit_money";
             // 
             // all_money
             // 
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.all_money.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.all_money.DefaultCellStyle = dataGridViewCellStyle6;
             this.all_money.HeaderText = "合计";
             this.all_money.Name = "all_money";
             // 
@@ -385,7 +379,7 @@
             this.rb_woman.AutoSize = true;
             this.rb_woman.Location = new System.Drawing.Point(436, 100);
             this.rb_woman.Name = "rb_woman";
-            this.rb_woman.Size = new System.Drawing.Size(48, 27);
+            this.rb_woman.Size = new System.Drawing.Size(44, 25);
             this.rb_woman.TabIndex = 14;
             this.rb_woman.TabStop = true;
             this.rb_woman.Text = "女";
@@ -396,7 +390,7 @@
             this.rb_man.AutoSize = true;
             this.rb_man.Location = new System.Drawing.Point(369, 100);
             this.rb_man.Name = "rb_man";
-            this.rb_man.Size = new System.Drawing.Size(48, 27);
+            this.rb_man.Size = new System.Drawing.Size(44, 25);
             this.rb_man.TabIndex = 13;
             this.rb_man.TabStop = true;
             this.rb_man.Text = "男";
@@ -854,7 +848,7 @@
             // 
             // MainUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
@@ -940,14 +934,13 @@
         private CCWin.SkinControl.SkinWaterTextBox tb_jishu;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private CCWin.SkinControl.SkinComboBox cm_emp;
         private System.Windows.Forms.DataGridViewTextBoxColumn drug_ab;
         private System.Windows.Forms.DataGridViewTextBoxColumn drug_name;
         private System.Windows.Forms.DataGridViewTextBoxColumn drug_count;
         private System.Windows.Forms.DataGridViewTextBoxColumn unit;
         private System.Windows.Forms.DataGridViewTextBoxColumn unit_money;
         private System.Windows.Forms.DataGridViewTextBoxColumn all_money;
-        private CCWin.SkinControl.SkinWaterTextBox tb_yanfang;
-        private System.Windows.Forms.Label label14;
-        private CCWin.SkinControl.SkinComboBox cm_emp;
     }
 }

@@ -86,7 +86,7 @@
             this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.skinLabel1.Location = new System.Drawing.Point(18, 37);
             this.skinLabel1.Name = "skinLabel1";
-            this.skinLabel1.Size = new System.Drawing.Size(0, 20);
+            this.skinLabel1.Size = new System.Drawing.Size(0, 17);
             this.skinLabel1.TabIndex = 3;
             // 
             // skinLabel2
@@ -98,7 +98,7 @@
             this.skinLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.skinLabel2.Location = new System.Drawing.Point(8, 54);
             this.skinLabel2.Name = "skinLabel2";
-            this.skinLabel2.Size = new System.Drawing.Size(69, 20);
+            this.skinLabel2.Size = new System.Drawing.Size(65, 20);
             this.skinLabel2.TabIndex = 4;
             this.skinLabel2.Text = "方名搜索";
             // 
@@ -445,7 +445,7 @@
             this.skinLabel9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.skinLabel9.Location = new System.Drawing.Point(214, 37);
             this.skinLabel9.Name = "skinLabel9";
-            this.skinLabel9.Size = new System.Drawing.Size(0, 20);
+            this.skinLabel9.Size = new System.Drawing.Size(0, 17);
             this.skinLabel9.TabIndex = 30;
             this.skinLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -487,7 +487,7 @@
             this.bt_confirm.NormlBack = null;
             this.bt_confirm.Size = new System.Drawing.Size(102, 23);
             this.bt_confirm.TabIndex = 28;
-            this.bt_confirm.Text = "确  认";
+            this.bt_confirm.Text = "增加";
             this.bt_confirm.UseVisualStyleBackColor = false;
             this.bt_confirm.Click += new System.EventHandler(this.bt_confirm_Click);
             // 
@@ -495,7 +495,7 @@
             // 
             this.text_method.Location = new System.Drawing.Point(332, 400);
             this.text_method.Name = "text_method";
-            this.text_method.Size = new System.Drawing.Size(347, 25);
+            this.text_method.Size = new System.Drawing.Size(347, 21);
             this.text_method.TabIndex = 26;
             this.text_method.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_method.WaterText = "";
@@ -504,7 +504,7 @@
             // 
             this.text_function.Location = new System.Drawing.Point(332, 146);
             this.text_function.Name = "text_function";
-            this.text_function.Size = new System.Drawing.Size(347, 25);
+            this.text_function.Size = new System.Drawing.Size(347, 21);
             this.text_function.TabIndex = 25;
             this.text_function.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_function.WaterText = "";
@@ -513,7 +513,7 @@
             // 
             this.text_from.Location = new System.Drawing.Point(332, 116);
             this.text_from.Name = "text_from";
-            this.text_from.Size = new System.Drawing.Size(133, 25);
+            this.text_from.Size = new System.Drawing.Size(133, 21);
             this.text_from.TabIndex = 24;
             this.text_from.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_from.WaterText = "";
@@ -522,7 +522,7 @@
             // 
             this.text_code.Location = new System.Drawing.Point(566, 83);
             this.text_code.Name = "text_code";
-            this.text_code.Size = new System.Drawing.Size(60, 25);
+            this.text_code.Size = new System.Drawing.Size(60, 21);
             this.text_code.TabIndex = 23;
             this.text_code.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_code.WaterText = "";
@@ -531,7 +531,7 @@
             // 
             this.text_name.Location = new System.Drawing.Point(332, 83);
             this.text_name.Name = "text_name";
-            this.text_name.Size = new System.Drawing.Size(133, 25);
+            this.text_name.Size = new System.Drawing.Size(133, 21);
             this.text_name.TabIndex = 22;
             this.text_name.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_name.WaterText = "";
@@ -651,7 +651,7 @@
             // 
             // prescription_management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);

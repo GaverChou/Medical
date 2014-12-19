@@ -10,7 +10,7 @@ namespace IDAL
     {
         DataTable GetEmpDataList();
         DataTable GetEmpDataListByAb(string ab);
-        bool DeleteByID(int did);
+        bool DeleteByID(string did);
         bool Add(Model.EmpTab empTab);    //传入值
         bool Update(Model.EmpTab empTab); //传入值
     }

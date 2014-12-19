@@ -20,3 +20,14 @@ C:\Users\Administrator\Desktop\数据库大作业\Medical\DALFactory\bin\Release
 C:\Users\Administrator\Desktop\数据库大作业\Medical\DALFactory\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\数据库大作业\Medical\DALFactory\obj\Release\DALFactory.dll
 C:\Users\Administrator\Desktop\数据库大作业\Medical\DALFactory\obj\Release\DALFactory.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\bin\Release\DALFactory.dll
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\bin\Release\DALFactory.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\bin\Release\IDAL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\bin\Release\SQlDAL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\bin\Release\Model.dll
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\bin\Release\IDAL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\bin\Release\SQlDAL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\bin\Release\Model.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\obj\Release\DALFactory.dll
+C:\Documents and Settings\gdufs\桌面\Medical\DALFactory\obj\Release\DALFactory.pdb

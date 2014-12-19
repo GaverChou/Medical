@@ -29,12 +29,17 @@ namespace WinForm
             drugs_dvg.DataSource = drugBLL.GetDrugsByName(tx_search.Text.Trim());
         }
         private int drug_id;
+
         private void drugs_dvg_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             int index = e.RowIndex;
-            if (index < drugs_dvg.RowCount)
+            if (index < drugs_dvg.RowCount&&index>=0)
             {
-                drug_id = Convert.ToInt16(drugs_dvg.Rows[index].Cells[0].Value);
+                string v = drugs_dvg.Rows[index].Cells[0].Value.ToString();
+                if("".Equals(v)||v==null){
+                    return;
+                }
+                drug_id = Convert.ToInt16(v);
             }
         }
 

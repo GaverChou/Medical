@@ -49,3 +49,29 @@ C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Re
 C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\Medical.Properties.Resources.resources
 C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\GenerateResource.read.1.tlog
 C:\Users\Administrator\Desktop\数据库大作业\Medical\MedicalForm\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\Medical.exe.config
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\Medical.exe
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\Medical.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\BLL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\SkinForm.dll
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\SQlDAL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\WinForm.dll
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\IDAL.dll
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\Model.dll
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\DALFactory.dll
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\Common.dll
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\BLL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\SQlDAL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\WinForm.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\IDAL.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\Model.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\DALFactory.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\bin\Release\Common.pdb
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\obj\x86\Release\Medical.Form2.resources
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\obj\x86\Release\Medical.Form3.resources
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\obj\x86\Release\Medical.Properties.Resources.resources
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\obj\x86\Release\Medical.exe
+C:\Documents and Settings\gdufs\桌面\Medical\MedicalForm\obj\x86\Release\Medical.pdb
