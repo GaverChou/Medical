@@ -33,9 +33,14 @@ namespace WinForm
             this.lb_username.Text = UserHelper.userName;
             tb_old.DataBindings.Add("Text", tb_pname, "Text");//bangding
             this.drug_tab_dv.AutoGenerateColumns = false;
-            this.cm_emp.DataSource = empBLL.GetAllEmpTab();
-            cm_emp.DisplayMember = "em_name";//这是text值
-            cm_emp.ValueMember = "em_name";
+            DataTable tab = empBLL.GetAllEmpTab();
+            //this.cm_emp.DataSource = tab;
+            //cm_emp.DisplayMember = "em_name";//这是text值
+            //cm_emp.ValueMember = "em_name";
+            for (int i = 0; i < tab.Rows.Count; i++)
+            {
+                cm_emp.Items.Add(tab.Rows[i]["em_name"]);
+            }
         }
 
         private void dv_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -70,7 +75,14 @@ namespace WinForm
 
         private void clear_btn_Click(object sender, EventArgs e)
         {
-            this.drug_tab_dv.Rows.Clear();
+            if (this.drug_tab_dv.DataSource != null)
+            {
+                this.drug_tab_dv.DataSource = null;
+            }
+            else
+            {
+                this.drug_tab_dv.Rows.Clear();
+            }
         }
 
         private void print_btn_Click_1(object sender, EventArgs e)
@@ -90,9 +102,11 @@ namespace WinForm
 
         private void baocun_btn_Click(object sender, EventArgs e)
         {
+            //将输入的信息封装成类对象，传入bll层
             Model.Patient patient = new Model.Patient();
             Model.Patient_Tab patient_tab = new Model.Patient_Tab();
             patient.P_name = tb_pname.Text.Trim();
+            //年龄信息出错，提醒用户
             try
             {
                 patient.Old = Convert.ToInt16(tb_old.Text.Trim());
@@ -105,10 +119,14 @@ namespace WinForm
             patient.Tel = tb_tel.Text.Trim();
             patient.Idcard = tb_idcard.Text.Trim();
             patient.D_ID = UserHelper.id;
+            //用与得到用户转入的病人照片信息
             if (FileName != null && !"".Equals(FileName))
             {
                 if ((pictureBox1.Image != null))
+                {
                     pictureBox1.Image.Dispose();
+                    pictureBox1.Image = null;
+                }
                 patient.Thumb = Common.Util.GetImageByte(FileName);
             }
             if (rb_man.Checked)
@@ -127,6 +145,7 @@ namespace WinForm
             patient_tab.Xianbingshi = tb_bingshi.Text.Trim();
             patient_tab.Zhengduan = tb_zhenduan.Text.Trim();
             string msg = "";
+            //添加处方信息与病人信息
             if (patientInstance.AddPatient(patient, patient_tab, out msg))
             {
                 MessageBoxBuilder.buildbox("保存成功！", "ok");

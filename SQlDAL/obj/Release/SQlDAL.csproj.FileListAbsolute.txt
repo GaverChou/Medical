@@ -25,3 +25,12 @@ C:\Documents and Settings\gdufs\桌面\Medical\SQlDAL\bin\Release\Model.pdb
 C:\Documents and Settings\gdufs\桌面\Medical\SQlDAL\obj\Release\ResolveAssemblyReference.cache
 C:\Documents and Settings\gdufs\桌面\Medical\SQlDAL\obj\Release\SQlDAL.dll
 C:\Documents and Settings\gdufs\桌面\Medical\SQlDAL\obj\Release\SQlDAL.pdb
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\bin\Release\SQlDAL.dll
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\bin\Release\SQlDAL.pdb
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\bin\Release\IDAL.dll
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\bin\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\bin\Release\IDAL.pdb
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\bin\Release\Model.pdb
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\obj\Release\SQlDAL.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\obj\Release\SQlDAL.dll
+C:\Users\Administrator\Desktop\数据库工程\Medical\SQlDAL\obj\Release\SQlDAL.pdb

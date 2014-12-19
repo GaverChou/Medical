@@ -9,13 +9,12 @@ namespace Common
 
     public class XmlRW
     {
-
+        //将该类设置成单例模式
         private static XmlRW instance;
-
         private XmlRW()
         {
         }
-
+        //当第一次使用时初始化该对象
         public static XmlRW GetXmlRW()
         {
             if (instance == null)
@@ -81,7 +80,6 @@ namespace Common
                     xn.SelectSingleNode(name).InnerText = value;
                 }
             }
-
             myDoc.Save(FileName);
             }
             catch (Exception exp)
@@ -91,6 +89,7 @@ namespace Common
             return true;
         }
 
+        //通过name获取对应节点的值
         public string getValueByName(string FileName,string name)
         {
             string value = "0";

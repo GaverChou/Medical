@@ -23,8 +23,10 @@ namespace WinForm
         BLL.DrugBLL drugbll = BLL.DrugBLL.GetDrugBLLL();
         private void bt_save_Click(object sender, EventArgs e)
         {
+            //将数据封装成对象
             Model.Drug drug = new Model.Drug();
             string msg = "";
+            //获取每一行datagridview中的数据，通过调用bll层的AddDrugs方法依次插入数据库
             for (int i = 0; i < this.dataGridView1.Rows.Count-1; i++)
             {
                 drug.Drug_ab = dataGridView1.Rows[i].Cells["简码"].Value.ToString();
@@ -41,7 +43,9 @@ namespace WinForm
                 drug.Wei_jin = dataGridView1.Rows[i].Cells["味经"].Value.ToString();
                 if (!drugbll.AddDrug(drug,out msg))
                 {
+                    //若插入某一行出错则提醒用户第几行出错和出错信息
                     MessageBoxBuilder.buildErrbox("插入第"+i+"出错！"+msg);
+                    return;
                 }
             }
             MessageBoxBuilder.buildbox("插入成功！","ok");

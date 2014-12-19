@@ -26,17 +26,39 @@ namespace BLL
         
         public DataTable GetAllDrug()
         {
-            return iDrug.GetDrugDataList();
+            try
+            {
+                return iDrug.GetDrugDataList();
+            }
+            catch
+            {
+                return null;
+            }
         }
 
+        //通过调用dal层方法模糊查询匹配ab的所有药品
         public DataTable GetDrugsByAB(string ab)
         {
+            try
+            {
             return iDrug.FindDrugByAB(ab);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public DataTable GetDrugsByName(string name)
         {
+            try
+            {
             return iDrug.FindDrugByName(name);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public double GetDrugsCount()

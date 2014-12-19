@@ -379,7 +379,7 @@
             this.rb_woman.AutoSize = true;
             this.rb_woman.Location = new System.Drawing.Point(436, 100);
             this.rb_woman.Name = "rb_woman";
-            this.rb_woman.Size = new System.Drawing.Size(44, 25);
+            this.rb_woman.Size = new System.Drawing.Size(48, 27);
             this.rb_woman.TabIndex = 14;
             this.rb_woman.TabStop = true;
             this.rb_woman.Text = "女";
@@ -390,7 +390,7 @@
             this.rb_man.AutoSize = true;
             this.rb_man.Location = new System.Drawing.Point(369, 100);
             this.rb_man.Name = "rb_man";
-            this.rb_man.Size = new System.Drawing.Size(44, 25);
+            this.rb_man.Size = new System.Drawing.Size(48, 27);
             this.rb_man.TabIndex = 13;
             this.rb_man.TabStop = true;
             this.rb_man.Text = "男";
@@ -848,7 +848,7 @@
             // 
             // MainUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);

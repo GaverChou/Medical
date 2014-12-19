@@ -142,11 +142,14 @@ namespace SQlDAL
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append("select * ");
-            strSql.Append("from patient_data,patient_tab where d_id=@d_id and patient_data.pid=patient_tab.pid and patient_tab.look_date=@time");
+            strSql.Append("from patient_data,patient_tab where d_id=@d_id and patient_data.pid=patient_tab.pid and patient_tab.look_date>@time");
+            strSql.Append(" and patient_tab.look_date<@time2");
             SqlParameter[] parameters = { new SqlParameter("@d_id", SqlDbType.Int),
-                                        new SqlParameter("@time", SqlDbType.DateTime) };
+                                        new SqlParameter("@time", SqlDbType.DateTime) ,
+                                        new SqlParameter("@time2", SqlDbType.DateTime)};
             parameters[0].Value = did;
             parameters[1].Value = time;
+            parameters[2].Value = time.AddDays(1.0);
             return SqlDbHelper.ExecuteDataTable(strSql.ToString(), CommandType.Text, parameters);
         }
 

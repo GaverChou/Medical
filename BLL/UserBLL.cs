@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Model;
+using Common;
 
 namespace BLL
 {
@@ -38,7 +39,7 @@ namespace BLL
             bool ok =false;
             try
             {
-                ok = iUser.Login(userName, userPassword);
+                ok = iUser.Login(userName, MD5Provider.Hash(userPassword));
             }
             catch (Exception exp)
             {
@@ -61,6 +62,7 @@ namespace BLL
             }
             try
             {
+                user.Password = MD5Provider.Hash(user.Password);
                 int id = iUser.AddUserAndRetId(user);
                 msg = Convert.ToString(id);
                 if (id != -1)
@@ -102,7 +104,7 @@ namespace BLL
                 {
                     User user = new User();
                     user.UserName = data.Username;
-                    user.Password = passw;
+                    user.Password = MD5Provider.Hash(passw);
                     if (iUser.Update(user))
                     {
                         msg = "更新成功！！";

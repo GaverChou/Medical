@@ -29,6 +29,7 @@ namespace BLL
             return iEmpDrug.GetDrugListByID();
         }
 
+        //通过调用dal层利用模糊匹配查询得出用户需要的验方
         public DataTable GetEmpDrugsByAb(string ab)
         {
             return iEmpDrug.GetDrugListByAb(ab);

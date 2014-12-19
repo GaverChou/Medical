@@ -33,24 +33,26 @@ namespace WinForm
 
         }
 
+        //通过调用该方法，将bll返回的datatable绑定至各个控件
         public void Fill()
         {
-            if (switch_i == 0&&!"".Equals(name_find_tb.Text.Trim()))
+            if (switch_i == 0&&!"".Equals(name_find_tb.Text.Trim()))//若用户勾选了名称查询，则返回所有含有该字符的病人
             {
                 objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(UserHelper.id,name_find_tb.Text.Trim());
             }
-            else if (switch_i == 1 && date_time.Value != null)
+            else if (switch_i == 1 && date_time.Value != null)//若用户勾选了日期查询，则返回该日期接待过的所有病人
             {
                 objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(UserHelper.id, date_time.Value);
             }
             else
             {
+                //若用户没有使用病人名称或者日期查询，则返回该用户接待过的所有病人
                 objDTable = BLL.PatientBLL.GetPatientBLL().GetPatientList(UserHelper.id);
             }
-            this.patient_dwg.DataSource = objDTable;
+            this.patient_dwg.DataSource = objDTable;//将病人信息绑定到病人信息gridview里
             if (isFirst)
             {
-                myBind = (CurrencyManager)this.BindingContext[objDTable];
+                myBind = (CurrencyManager)this.BindingContext[objDTable];//初始化绑定器
                 //以下为各个控件进行数据绑定 
                 name_tb.DataBindings.Add(new Binding("Text", objDTable, "p_name"));
                 id_tb.DataBindings.Add(new Binding("Text", objDTable, "pid"));
@@ -134,6 +136,17 @@ namespace WinForm
             //}
         }
 
+        public void ShowPhoto()
+        {
+            if ((pb_patient.Image != null))
+            {
+                pb_patient.Image = null;
+                if (!"".Equals(FileName) && FileName != null)
+                    pb_patient.Image = Image.FromFile(FileName, true);
+            }
+            else if (!"".Equals(FileName) && FileName != null)
+                pb_patient.Image = Image.FromFile(FileName, true);
+        }
         private Model.Patient ParseData()
         {
             Model.Patient patient = new Model.Patient();
@@ -155,14 +168,17 @@ namespace WinForm
         {
             if (FileName != null && !"".Equals(FileName))
             {
-              if ((pb_patient.Image != null))
-                  pb_patient.Image.Dispose();
+                if ((pb_patient.Image != null))
+                {
+                    pb_patient.Image.Dispose();
+                    pb_patient.Image = null;
+                }
                byte[] b = Common.Util.GetImageByte(FileName);
                if (BLL.PatientBLL.GetPatientBLL().UpdatePatientPhoto(pid, b))
                {
                    MessageBoxBuilder.buildbox("上传成功！","ok");
                    Fill();
-                   pb_patient.Image = Image.FromFile(FileName, true);
+                   ShowPhoto();
                }
                else
                {
@@ -175,9 +191,6 @@ namespace WinForm
         {
 
         }
-
-    
-
         
     }
 }

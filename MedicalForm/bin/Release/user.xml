@@ -2,7 +2,7 @@
 <UserLogin>
   <User>
     <Check>1</Check>
-    <UserName>李四思思</UserName>
-    <UserPwd>123</UserPwd>
+    <UserName>张三</UserName>
+    <UserPwd>456</UserPwd>
   </User>
 </UserLogin>
