@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Patient));
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -483,16 +484,25 @@
             // 
             // Patient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.ClientSize = new System.Drawing.Size(1061, 727);
+            this.CloseDownBack = global::WinForm.Properties.Resources.CloseDownBack;
+            this.CloseMouseBack = global::WinForm.Properties.Resources.CloseMouseBack;
+            this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
             this.Controls.Add(this.skinPanel1);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
+            this.MiniDownBack = global::WinForm.Properties.Resources.MiniDownBack;
+            this.MiniMouseBack = global::WinForm.Properties.Resources.MiniMouseBack;
+            this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "Patient";
+            this.ShadowWidth = 6;
+            this.ShowBorder = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "病人管理";
             this.Load += new System.EventHandler(this.Patient_Load);

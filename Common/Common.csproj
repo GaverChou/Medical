@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExcelLibrary">
+      <HintPath>bin\Debug\ExcelLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="SkinForm">
       <HintPath>..\WinForm\bin\Debug\SkinForm.dll</HintPath>
     </Reference>

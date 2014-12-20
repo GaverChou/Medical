@@ -86,7 +86,7 @@
             this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.skinLabel1.Location = new System.Drawing.Point(18, 37);
             this.skinLabel1.Name = "skinLabel1";
-            this.skinLabel1.Size = new System.Drawing.Size(0, 17);
+            this.skinLabel1.Size = new System.Drawing.Size(0, 20);
             this.skinLabel1.TabIndex = 3;
             // 
             // skinLabel2
@@ -98,7 +98,7 @@
             this.skinLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.skinLabel2.Location = new System.Drawing.Point(8, 54);
             this.skinLabel2.Name = "skinLabel2";
-            this.skinLabel2.Size = new System.Drawing.Size(65, 20);
+            this.skinLabel2.Size = new System.Drawing.Size(69, 20);
             this.skinLabel2.TabIndex = 4;
             this.skinLabel2.Text = "方名搜索";
             // 
@@ -396,14 +396,14 @@
             this.bt_alter.BackColor = System.Drawing.Color.White;
             this.bt_alter.BaseColor = System.Drawing.Color.PowderBlue;
             this.bt_alter.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.bt_alter.DownBack = null;
+            this.bt_alter.DownBack = ((System.Drawing.Image)(resources.GetObject("bt_alter.DownBack")));
             this.bt_alter.FadeGlow = false;
             this.bt_alter.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.bt_alter.ForeColor = System.Drawing.Color.White;
             this.bt_alter.Image = ((System.Drawing.Image)(resources.GetObject("bt_alter.Image")));
             this.bt_alter.ImageWidth = 102;
             this.bt_alter.Location = new System.Drawing.Point(280, 470);
-            this.bt_alter.MouseBack = null;
+            this.bt_alter.MouseBack = ((System.Drawing.Image)(resources.GetObject("bt_alter.MouseBack")));
             this.bt_alter.Name = "bt_alter";
             this.bt_alter.NormlBack = null;
             this.bt_alter.Size = new System.Drawing.Size(102, 23);
@@ -445,7 +445,7 @@
             this.skinLabel9.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.skinLabel9.Location = new System.Drawing.Point(214, 37);
             this.skinLabel9.Name = "skinLabel9";
-            this.skinLabel9.Size = new System.Drawing.Size(0, 17);
+            this.skinLabel9.Size = new System.Drawing.Size(0, 20);
             this.skinLabel9.TabIndex = 30;
             this.skinLabel9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -454,14 +454,14 @@
             this.bt_delete.BackColor = System.Drawing.Color.White;
             this.bt_delete.BaseColor = System.Drawing.Color.PowderBlue;
             this.bt_delete.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.bt_delete.DownBack = null;
+            this.bt_delete.DownBack = ((System.Drawing.Image)(resources.GetObject("bt_delete.DownBack")));
             this.bt_delete.FadeGlow = false;
             this.bt_delete.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.bt_delete.ForeColor = System.Drawing.Color.White;
             this.bt_delete.Image = ((System.Drawing.Image)(resources.GetObject("bt_delete.Image")));
             this.bt_delete.ImageWidth = 102;
             this.bt_delete.Location = new System.Drawing.Point(579, 470);
-            this.bt_delete.MouseBack = null;
+            this.bt_delete.MouseBack = ((System.Drawing.Image)(resources.GetObject("bt_delete.MouseBack")));
             this.bt_delete.Name = "bt_delete";
             this.bt_delete.NormlBack = null;
             this.bt_delete.Size = new System.Drawing.Size(102, 23);
@@ -475,14 +475,14 @@
             this.bt_confirm.BackColor = System.Drawing.Color.White;
             this.bt_confirm.BaseColor = System.Drawing.Color.PowderBlue;
             this.bt_confirm.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.bt_confirm.DownBack = null;
+            this.bt_confirm.DownBack = ((System.Drawing.Image)(resources.GetObject("bt_confirm.DownBack")));
             this.bt_confirm.FadeGlow = false;
             this.bt_confirm.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.bt_confirm.ForeColor = System.Drawing.Color.White;
             this.bt_confirm.Image = ((System.Drawing.Image)(resources.GetObject("bt_confirm.Image")));
             this.bt_confirm.ImageWidth = 102;
             this.bt_confirm.Location = new System.Drawing.Point(426, 470);
-            this.bt_confirm.MouseBack = null;
+            this.bt_confirm.MouseBack = ((System.Drawing.Image)(resources.GetObject("bt_confirm.MouseBack")));
             this.bt_confirm.Name = "bt_confirm";
             this.bt_confirm.NormlBack = null;
             this.bt_confirm.Size = new System.Drawing.Size(102, 23);
@@ -495,7 +495,7 @@
             // 
             this.text_method.Location = new System.Drawing.Point(332, 400);
             this.text_method.Name = "text_method";
-            this.text_method.Size = new System.Drawing.Size(347, 21);
+            this.text_method.Size = new System.Drawing.Size(347, 25);
             this.text_method.TabIndex = 26;
             this.text_method.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_method.WaterText = "";
@@ -504,7 +504,7 @@
             // 
             this.text_function.Location = new System.Drawing.Point(332, 146);
             this.text_function.Name = "text_function";
-            this.text_function.Size = new System.Drawing.Size(347, 21);
+            this.text_function.Size = new System.Drawing.Size(347, 25);
             this.text_function.TabIndex = 25;
             this.text_function.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_function.WaterText = "";
@@ -513,7 +513,7 @@
             // 
             this.text_from.Location = new System.Drawing.Point(332, 116);
             this.text_from.Name = "text_from";
-            this.text_from.Size = new System.Drawing.Size(133, 21);
+            this.text_from.Size = new System.Drawing.Size(133, 25);
             this.text_from.TabIndex = 24;
             this.text_from.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_from.WaterText = "";
@@ -522,7 +522,7 @@
             // 
             this.text_code.Location = new System.Drawing.Point(566, 83);
             this.text_code.Name = "text_code";
-            this.text_code.Size = new System.Drawing.Size(60, 21);
+            this.text_code.Size = new System.Drawing.Size(60, 25);
             this.text_code.TabIndex = 23;
             this.text_code.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_code.WaterText = "";
@@ -531,7 +531,7 @@
             // 
             this.text_name.Location = new System.Drawing.Point(332, 83);
             this.text_name.Name = "text_name";
-            this.text_name.Size = new System.Drawing.Size(133, 21);
+            this.text_name.Size = new System.Drawing.Size(133, 25);
             this.text_name.TabIndex = 22;
             this.text_name.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.text_name.WaterText = "";
@@ -539,7 +539,7 @@
             // skinLabel7
             // 
             this.skinLabel7.AutoSize = true;
-            this.skinLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel7.BackColor = System.Drawing.Color.PowderBlue;
             this.skinLabel7.BorderColor = System.Drawing.Color.White;
             this.skinLabel7.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel7.Location = new System.Drawing.Point(276, 399);
@@ -575,7 +575,7 @@
             // skinLabel8
             // 
             this.skinLabel8.AutoSize = true;
-            this.skinLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel8.BackColor = System.Drawing.Color.PowderBlue;
             this.skinLabel8.BorderColor = System.Drawing.Color.White;
             this.skinLabel8.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel8.Location = new System.Drawing.Point(182, 8);
@@ -587,7 +587,7 @@
             // skinLabel6
             // 
             this.skinLabel6.AutoSize = true;
-            this.skinLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel6.BackColor = System.Drawing.Color.PowderBlue;
             this.skinLabel6.BorderColor = System.Drawing.Color.White;
             this.skinLabel6.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel6.Location = new System.Drawing.Point(276, 144);
@@ -599,7 +599,7 @@
             // skinLabel5
             // 
             this.skinLabel5.AutoSize = true;
-            this.skinLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel5.BackColor = System.Drawing.Color.PowderBlue;
             this.skinLabel5.BorderColor = System.Drawing.Color.White;
             this.skinLabel5.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel5.Location = new System.Drawing.Point(275, 113);
@@ -611,7 +611,7 @@
             // skinLabel4
             // 
             this.skinLabel4.AutoSize = true;
-            this.skinLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel4.BackColor = System.Drawing.Color.PowderBlue;
             this.skinLabel4.BorderColor = System.Drawing.Color.White;
             this.skinLabel4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel4.Location = new System.Drawing.Point(507, 80);
@@ -623,7 +623,7 @@
             // skinLabel3
             // 
             this.skinLabel3.AutoSize = true;
-            this.skinLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel3.BackColor = System.Drawing.Color.PowderBlue;
             this.skinLabel3.BorderColor = System.Drawing.Color.White;
             this.skinLabel3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel3.Location = new System.Drawing.Point(274, 81);
@@ -651,7 +651,7 @@
             // 
             // prescription_management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -660,12 +660,14 @@
             this.CloseMouseBack = global::WinForm.Properties.Resources.CloseMouseBack;
             this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
             this.Controls.Add(this.skinPanel3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaxSize = new System.Drawing.Size(0, 0);
             this.MiniDownBack = global::WinForm.Properties.Resources.MiniDownBack;
             this.MiniMouseBack = global::WinForm.Properties.Resources.MiniMouseBack;
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "prescription_management";
+            this.ShowBorder = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "验方管理";
             this.Load += new System.EventHandler(this.验方管理_Load);

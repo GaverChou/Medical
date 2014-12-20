@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data;
+using System.Transactions;
 
 namespace BLL
 {
@@ -25,33 +26,43 @@ namespace BLL
             return instance;
         }
 
-        public bool AddPatient(Model.Patient patient,Model.Patient_Tab patient_tab,out string msg)
+        public bool AddPatient(Model.Patient patient, Model.Patient_Tab patient_tab, out string msg)
         {
-             msg = "";
-             if (!CheckPatientData(patient,out msg))
-             {
-                 return false;
-             }
-            int id = pa.AddPatientRetId(patient);
-            if (id!=-1)
+            msg = "";
+            bool isOK = false;
+            if (!CheckPatientData(patient, out msg))
             {
-                patient_tab.Pid = id;
-                if (!CheckPatientTabData(patient_tab,out msg))
+                return isOK;
+            }
+            using (TransactionScope tsCope = new TransactionScope())
+            {
+                try
                 {
+                    int id = pa.AddPatientRetId(patient);
+                    if (id != -1)
+                    {
+                        patient_tab.Pid = id;
+                        if (!CheckPatientTabData(patient_tab, out msg))
+                        {
+                            return false;
+                        }
+                        if ((paT.AddPatientTab(patient_tab)))
+                        {
+                            isOK = true;
+                        }
+                    }
+                }
+                catch (Exception exp)
+                {
+                    msg = exp.Message;
                     return false;
                 }
-                if ((paT.AddPatientTab(patient_tab)))
-                {
-                    return true;
-                }else
-                {
-                    pa.DeletePatientById(id);
-                    msg = "插入病人诊断信息失败!";
-                    return false;
-                }
+
+                tsCope.Complete();
+
             }
             msg = "插入病人信息失败！";
-            return false;
+            return isOK;
         }
 
         private bool CheckPatientData(Model.Patient patient, out string msg)
@@ -62,7 +73,7 @@ namespace BLL
                 msg = "未填入用户";
                 return false;
             }
-            else if (patient.D_ID<0)
+            else if (patient.D_ID < 0)
             {
                 msg = "医生信息出错！";
                 return false;
@@ -95,7 +106,7 @@ namespace BLL
             return true;
         }
 
-        private bool CheckPatientTabData(Model.Patient_Tab patient_tab,out string msg)
+        private bool CheckPatientTabData(Model.Patient_Tab patient_tab, out string msg)
         {
             msg = "";
             if (patient_tab == null)
@@ -103,7 +114,7 @@ namespace BLL
                 msg = "用户诊断信息为空";
                 return false;
             }
-            else if (patient_tab.Chufang_count<=0)
+            else if (patient_tab.Chufang_count <= 0)
             {
                 msg = "处方记数出错！";
                 return false;
@@ -126,19 +137,19 @@ namespace BLL
             return pa.GetPatientList(id);
         }
 
-        public DataTable GetPatientList(int id,string like)
+        public DataTable GetPatientList(int id, string like)
         {
-            return pa.GetPatientList(id,like);
+            return pa.GetPatientList(id, like);
         }
 
-        public DataTable GetPatientList(int id,DateTime time)
+        public DataTable GetPatientList(int id, DateTime time)
         {
-            return pa.GetPatientList(id,time);
+            return pa.GetPatientList(id, time);
         }
 
         public bool UpdatePatientPhoto(int pid, byte[] bytes)
         {
-            return pa.UpdatePatientPhoto(pid,bytes);
+            return pa.UpdatePatientPhoto(pid, bytes);
         }
     }
 }

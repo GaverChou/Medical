@@ -115,14 +115,22 @@ namespace SQlDAL
             parameters[0].Value = user.UserName;
             parameters[1].Value = user.Password;
             SqlDataReader reader = SqlDbHelper.ExecuteReader(strSql.ToString(), CommandType.Text, parameters);
-            if (reader.Read())
+            try
             {
-                return Int16.Parse(reader[0].ToString());
+                if (reader.Read())
+                {
+                    return Int16.Parse(reader[0].ToString());
+                }
             }
-            else
+            catch
             {
                 return -1;
             }
+            finally
+            {
+                reader.Close();
+            }
+            return -1;
         }
 
         public int FindIdByName(string name)

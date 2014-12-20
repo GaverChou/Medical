@@ -13,3 +13,8 @@ C:\Documents and Settings\gdufs\桌面\Medical\Model\bin\Release\Model.pdb
 C:\Documents and Settings\gdufs\桌面\Medical\Model\obj\Release\ResolveAssemblyReference.cache
 C:\Documents and Settings\gdufs\桌面\Medical\Model\obj\Release\Model.dll
 C:\Documents and Settings\gdufs\桌面\Medical\Model\obj\Release\Model.pdb
+C:\Users\Administrator\Desktop\数据库工程\Medical\Model\bin\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库工程\Medical\Model\bin\Release\Model.pdb
+C:\Users\Administrator\Desktop\数据库工程\Medical\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\数据库工程\Medical\Model\obj\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库工程\Medical\Model\obj\Release\Model.pdb

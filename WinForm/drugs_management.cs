@@ -43,30 +43,11 @@ namespace WinForm
             }
         }
 
-        private void btn_delete_Click(object sender, EventArgs e)
-        {
-            string msg = "";
-            if (drugBLL.DeleteById(drug_id, out msg))
-            {
-                MessageBoxBuilder.buildbox(msg, "ok");
-            }
-            else
-            {
-                MessageBoxBuilder.buildErrbox(msg);
-            }
-        }
-
+        public static drugs_management dm = new drugs_management();
         private void button3_Click(object sender, EventArgs e)
         {
-            add_drugs ads = new add_drugs();
-            ads.Show();
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            drugs_management dmt = new drugs_management();
-            dmt.Show();
+            this.Hide();
+            add_drugs.ad.Show();
         }
 
         private void skinWaterTextBox1_TextChanged(object sender, EventArgs e)
@@ -79,8 +60,35 @@ namespace WinForm
 
         }
 
-        
-
-       
+        private void btn_delete_Click_1(object sender, EventArgs e)
+        {
+            string msg = "";
+            if (drugBLL.DeleteById(drug_id, out msg))
+            {
+                MessageBoxBuilder.buildbox(msg, "ok");
+            }
+            else
+            {
+                MessageBoxBuilder.buildErrbox(msg);
+            }
+        }
+        string backupPath = ""; //备份路径
+        private void btn_export_Click(object sender, EventArgs e)
+        {
+            string msg = "";
+            DataTable t = drugBLL.GetAllDrug();
+            sfdlgBackup.FilterIndex = 1;
+            sfdlgBackup.FileName = "";
+            sfdlgBackup.Filter = "Bak Files (*,xls)|*.xls";
+            if (sfdlgBackup.ShowDialog() == DialogResult.OK)
+            {
+                backupPath = sfdlgBackup.FileName.ToString();
+            }
+            if (!"".Equals(backupPath))
+            {
+                Common.Util.ExportXLS(backupPath,t,out msg);
+            }
+            MessageBoxBuilder.buildbox(msg ," ");
+        }
     }
 }

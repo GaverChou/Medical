@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.IO;
 using System.Xml;
+using System.Data;
 
 namespace Common
 {
@@ -41,6 +42,36 @@ namespace Common
             B = (byte[])Array.CreateInstance(typeof(byte), imgLen);
             int nBytesRead = fs.Read(B, 0, imgLen);
             return B;
+        }
+
+        public static void ExportXLS(string filename, DataTable tab,out string msg)
+        {
+            DataSet ds = new DataSet("DataSet");
+            //Set the locale for each
+            ds.Locale = System.Threading.Thread.CurrentThread.CurrentCulture;
+            tab.Locale = System.Threading.Thread.CurrentThread.CurrentCulture;
+            ds.Tables.Add(tab);
+            msg = "导出成功！";
+            try
+            {
+                ExcelLibrary.DataSetHelper.CreateWorkbook(filename, ds);
+            }
+            catch(Exception ex)
+            {
+                msg = ex.Message;
+            }
+        }
+
+        public static DataTable ImportXLS(string filename)
+        {
+            try
+            {
+                return ExcelLibrary.DataSetHelper.CreateDataTable(filename, "Sheet1");
+            }
+            catch
+            {
+                return new DataTable();
+            }
         }
 
         public static bool RemPassWd(string name,string passwd)

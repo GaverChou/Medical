@@ -23,7 +23,7 @@ namespace BLL
             }
             return instance;
         }
-        
+
         public DataTable GetAllDrug()
         {
             try
@@ -41,7 +41,7 @@ namespace BLL
         {
             try
             {
-            return iDrug.FindDrugByAB(ab);
+                return iDrug.FindDrugByAB(ab);
             }
             catch
             {
@@ -53,7 +53,7 @@ namespace BLL
         {
             try
             {
-            return iDrug.FindDrugByName(name);
+                return iDrug.FindDrugByName(name);
             }
             catch
             {
@@ -100,7 +100,7 @@ namespace BLL
             }
         }
 
-        public bool AddDrug(Model.Drug drug,out string msg)
+        public bool AddDrug(Model.Drug drug, out string msg)
         {
             try
             {

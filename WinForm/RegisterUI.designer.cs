@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterUI));
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.back_btn = new CCWin.SkinControl.SkinButton();
             this.register_btn = new CCWin.SkinControl.SkinButton();
@@ -82,6 +83,8 @@
             // back_btn
             // 
             this.back_btn.BackColor = System.Drawing.Color.Transparent;
+            this.back_btn.BackgroundImage = global::WinForm.Properties.Resources.blue_btn_move;
+            this.back_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.back_btn.BaseColor = System.Drawing.Color.Silver;
             this.back_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.back_btn.DownBack = null;
@@ -101,6 +104,8 @@
             // register_btn
             // 
             this.register_btn.BackColor = System.Drawing.Color.Transparent;
+            this.register_btn.BackgroundImage = global::WinForm.Properties.Resources.blue_btn_move;
+            this.register_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.register_btn.BaseColor = System.Drawing.Color.Silver;
             this.register_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.register_btn.DownBack = null;
@@ -288,13 +293,13 @@
             this.skinLabel8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.skinLabel8.Location = new System.Drawing.Point(178, 66);
             this.skinLabel8.Name = "skinLabel8";
-            this.skinLabel8.Size = new System.Drawing.Size(101, 30);
+            this.skinLabel8.Size = new System.Drawing.Size(106, 31);
             this.skinLabel8.TabIndex = 1;
             this.skinLabel8.Text = "用户注册";
             // 
             // RegisterUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
             this.BackgroundImage = global::WinForm.Properties.Resources.bg;
@@ -305,12 +310,14 @@
             this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
             this.Controls.Add(this.skinLabel8);
             this.Controls.Add(this.skinPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MiniDownBack = global::WinForm.Properties.Resources.MiniDownBack;
             this.MiniMouseBack = global::WinForm.Properties.Resources.MiniMouseBack;
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "RegisterUI";
             this.RoundStyle = CCWin.SkinClass.RoundStyle.None;
+            this.ShowBorder = false;
             this.ShowDrawIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RegisterUI_FormClosed);

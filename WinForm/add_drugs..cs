@@ -16,18 +16,25 @@ namespace WinForm
             InitializeComponent();
         }
 
-        private void 添加药品_Load(object sender, EventArgs e)
-        {
-
-        }
         BLL.DrugBLL drugbll = BLL.DrugBLL.GetDrugBLLL();
-        private void bt_save_Click(object sender, EventArgs e)
+
+        private void bt_cancel_Click(object sender, EventArgs e)
         {
-            //将数据封装成对象
+            this.Hide();
+        }
+        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            drugs_management.dm.Show();
+        }
+        public static add_drugs ad = new add_drugs();
+
+        private void bt_save_Click_1(object sender, EventArgs e)
+        {
             Model.Drug drug = new Model.Drug();
             string msg = "";
-            //获取每一行datagridview中的数据，通过调用bll层的AddDrugs方法依次插入数据库
-            for (int i = 0; i < this.dataGridView1.Rows.Count-1; i++)
+            for (int i = 0; i < this.dataGridView1.Rows.Count - 1; i++)
             {
                 drug.Drug_ab = dataGridView1.Rows[i].Cells["简码"].Value.ToString();
                 drug.Drug_name = dataGridView1.Rows[i].Cells["药物"].Value.ToString();
@@ -35,38 +42,38 @@ namespace WinForm
                 drug.From_where = dataGridView1.Rows[i].Cells["产地"].Value.ToString();
                 drug.In_price = Double.Parse(dataGridView1.Rows[i].Cells["进价"].Value.ToString());
                 drug.Notice = dataGridView1.Rows[i].Cells["注意"].Value.ToString();
-                drug.Stock =  Double.Parse(dataGridView1.Rows[i].Cells["数量"].Value.ToString()); 
+                drug.Stock = Double.Parse(dataGridView1.Rows[i].Cells["数量"].Value.ToString());
                 drug.Unit = dataGridView1.Rows[i].Cells["单位"].Value.ToString();
-                drug.Unit_price =  Double.Parse(dataGridView1.Rows[i].Cells["单价"].Value.ToString());
-                drug.Use_down =  Double.Parse(dataGridView1.Rows[i].Cells["上限"].Value.ToString());
+                drug.Unit_price = Double.Parse(dataGridView1.Rows[i].Cells["单价"].Value.ToString());
+                drug.Use_down = Double.Parse(dataGridView1.Rows[i].Cells["上限"].Value.ToString());
                 drug.Use_up = Double.Parse(dataGridView1.Rows[i].Cells["下限"].Value.ToString());
                 drug.Wei_jin = dataGridView1.Rows[i].Cells["味经"].Value.ToString();
-                if (!drugbll.AddDrug(drug,out msg))
+                if (!drugbll.AddDrug(drug, out msg))
                 {
-                    //若插入某一行出错则提醒用户第几行出错和出错信息
-                    MessageBoxBuilder.buildErrbox("插入第"+i+"出错！"+msg);
-                    return;
+                    MessageBoxBuilder.buildErrbox("插入第" + i + "出错！" + msg);
                 }
             }
-            MessageBoxBuilder.buildbox("插入成功！","ok");
+            MessageBoxBuilder.buildbox("插入成功！", "ok");
+        }
+        string restorePath = ""; //恢复路径
+        private void btn_import_Click(object sender, EventArgs e)
+        {
+            sfdlgBackup.FilterIndex = 1;
+            sfdlgBackup.FileName = "";
+            sfdlgBackup.Filter = "Bak Files (*,xls)|*.xls";
+            if (sfdlgBackup.ShowDialog() == DialogResult.OK)
+            {
+                restorePath = sfdlgBackup.FileName.ToString();
+            }
+            if(!"".Equals(restorePath))
+            {
+                dataGridView1.DataSource = Common.Util.ImportXLS(restorePath);
+            }
         }
 
-
-        private void bt_cancel_Click(object sender, EventArgs e)
+        private void bt_cancel_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            drugs_management dm = new drugs_management();
-            dm.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            add_drugs ad = new add_drugs();
-            ad.Show();
+            this.Hide();
         }
 
     

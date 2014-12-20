@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginUI));
             this.label1 = new System.Windows.Forms.Label();
             this.userName_txb = new CCWin.SkinControl.SkinWaterTextBox();
             this.passwd_txb = new CCWin.SkinControl.SkinWaterTextBox();
@@ -205,12 +206,15 @@
             this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
             this.Controls.Add(this.skinPanel1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MiniDownBack = global::WinForm.Properties.Resources.MiniDownBack;
             this.MiniMouseBack = global::WinForm.Properties.Resources.MiniMouseBack;
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "LoginUI";
             this.RoundStyle = CCWin.SkinClass.RoundStyle.None;
+            this.ShadowWidth = 6;
+            this.ShowBorder = false;
             this.ShowDrawIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginUI_FormClosed);

@@ -100,6 +100,18 @@ namespace WinForm
             //ev.HasMorePages = true;
         }
 
+        public void ShowPhoto()
+        {
+            if ((pictureBox1.Image != null))
+            {
+                pictureBox1.Image = null;
+                if (!"".Equals(FileName) && FileName != null)
+                    pictureBox1.Image = Image.FromFile(FileName, true);
+            }
+            else if (!"".Equals(FileName) && FileName != null)
+                pictureBox1.Image = Image.FromFile(FileName, true);
+        }
+
         private void baocun_btn_Click(object sender, EventArgs e)
         {
             //将输入的信息封装成类对象，传入bll层
@@ -149,6 +161,7 @@ namespace WinForm
             if (patientInstance.AddPatient(patient, patient_tab, out msg))
             {
                 MessageBoxBuilder.buildbox("保存成功！", "ok");
+                ShowPhoto();
             }
             else if (!"".Equals(msg))
             {
@@ -158,7 +171,6 @@ namespace WinForm
             {
                 MessageBoxBuilder.buildbox("未知错误！插入失败!","错误");
             }
-            pictureBox1.Image = Image.FromFile(FileName, true);
         }
 
         private void skinButton2_Click(object sender, EventArgs e)
@@ -211,6 +223,7 @@ namespace WinForm
                 dv.Show();
             }
         }
+
 
         private void drug_tab_dv_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {

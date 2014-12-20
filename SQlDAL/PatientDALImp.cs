@@ -187,14 +187,18 @@ namespace SQlDAL
 
 
             SqlDataReader reader = SqlDbHelper.ExecuteReader(strSql.ToString(), CommandType.Text, ParsePara(patient));
-            if (reader.Read())
+            try
             {
-                return Int16.Parse(reader[0].ToString());
+                if (reader.Read())
+                {
+                    return Int16.Parse(reader[0].ToString());
+                }
             }
-            else
+            finally
             {
-                return -1;
+                reader.Close();
             }
+            return -1;
         }
     }
 }

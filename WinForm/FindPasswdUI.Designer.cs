@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FindPasswdUI));
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
             this.back_btn = new CCWin.SkinControl.SkinButton();
             this.ok_btn = new CCWin.SkinControl.SkinButton();
@@ -161,12 +162,14 @@
             this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.skinPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MiniDownBack = global::WinForm.Properties.Resources.MiniDownBack;
             this.MiniMouseBack = global::WinForm.Properties.Resources.MiniMouseBack;
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "FindPasswdUI";
             this.RoundStyle = CCWin.SkinClass.RoundStyle.None;
+            this.ShowBorder = false;
             this.ShowDrawIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FindPasswdUI_FormClosed);

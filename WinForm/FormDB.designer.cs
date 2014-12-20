@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDB));
             this.grpBackup = new System.Windows.Forms.GroupBox();
+            this.btnBackup = new CCWin.SkinControl.SkinButton();
+            this.btnBackupPath = new CCWin.SkinControl.SkinButton();
             this.lblBackup = new System.Windows.Forms.Label();
             this.txtBackup = new System.Windows.Forms.TextBox();
             this.grpRestore = new System.Windows.Forms.GroupBox();
+            this.btnRestore = new CCWin.SkinControl.SkinButton();
+            this.btnRestroePath = new CCWin.SkinControl.SkinButton();
             this.lblRestore = new System.Windows.Forms.Label();
             this.txtRestore = new System.Windows.Forms.TextBox();
-            this.btnRestore = new System.Windows.Forms.Button();
-            this.btnRestroePath = new System.Windows.Forms.Button();
             this.sfdlgBackup = new System.Windows.Forms.SaveFileDialog();
             this.ofdlgRestore = new System.Windows.Forms.OpenFileDialog();
-            this.btnBackup = new System.Windows.Forms.Button();
-            this.btnBackupPath = new System.Windows.Forms.Button();
             this.grpBackup.SuspendLayout();
             this.grpRestore.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpBackup
             // 
-            this.grpBackup.Controls.Add(this.btnBackupPath);
             this.grpBackup.Controls.Add(this.btnBackup);
+            this.grpBackup.Controls.Add(this.btnBackupPath);
             this.grpBackup.Controls.Add(this.lblBackup);
             this.grpBackup.Controls.Add(this.txtBackup);
             this.grpBackup.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -57,6 +58,44 @@
             this.grpBackup.TabIndex = 0;
             this.grpBackup.TabStop = false;
             this.grpBackup.Text = "备份数据库";
+            // 
+            // btnBackup
+            // 
+            this.btnBackup.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnBackup.BaseColor = System.Drawing.Color.AliceBlue;
+            this.btnBackup.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnBackup.DownBack = null;
+            this.btnBackup.DrawType = CCWin.SkinControl.DrawStyle.Img;
+            this.btnBackup.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
+            this.btnBackup.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBackup.Location = new System.Drawing.Point(74, 68);
+            this.btnBackup.MouseBack = global::WinForm.Properties.Resources.blue_btn_normal;
+            this.btnBackup.Name = "btnBackup";
+            this.btnBackup.NormlBack = global::WinForm.Properties.Resources.blue_btn_move;
+            this.btnBackup.Size = new System.Drawing.Size(375, 22);
+            this.btnBackup.TabIndex = 8;
+            this.btnBackup.Text = "备份数据库";
+            this.btnBackup.UseVisualStyleBackColor = false;
+            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
+            // 
+            // btnBackupPath
+            // 
+            this.btnBackupPath.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnBackupPath.BaseColor = System.Drawing.Color.AliceBlue;
+            this.btnBackupPath.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnBackupPath.DownBack = null;
+            this.btnBackupPath.DrawType = CCWin.SkinControl.DrawStyle.Img;
+            this.btnBackupPath.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
+            this.btnBackupPath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBackupPath.Location = new System.Drawing.Point(427, 33);
+            this.btnBackupPath.MouseBack = global::WinForm.Properties.Resources.blue_btn_normal;
+            this.btnBackupPath.Name = "btnBackupPath";
+            this.btnBackupPath.NormlBack = global::WinForm.Properties.Resources.blue_btn_move;
+            this.btnBackupPath.Size = new System.Drawing.Size(70, 22);
+            this.btnBackupPath.TabIndex = 5;
+            this.btnBackupPath.Text = "选择";
+            this.btnBackupPath.UseVisualStyleBackColor = false;
+            this.btnBackupPath.Click += new System.EventHandler(this.btnBackupPath_Click_1);
             // 
             // lblBackup
             // 
@@ -72,15 +111,16 @@
             // 
             this.txtBackup.Location = new System.Drawing.Point(94, 32);
             this.txtBackup.Name = "txtBackup";
+            this.txtBackup.ReadOnly = true;
             this.txtBackup.Size = new System.Drawing.Size(327, 23);
             this.txtBackup.TabIndex = 0;
             // 
             // grpRestore
             // 
-            this.grpRestore.Controls.Add(this.lblRestore);
-            this.grpRestore.Controls.Add(this.txtRestore);
             this.grpRestore.Controls.Add(this.btnRestore);
             this.grpRestore.Controls.Add(this.btnRestroePath);
+            this.grpRestore.Controls.Add(this.lblRestore);
+            this.grpRestore.Controls.Add(this.txtRestore);
             this.grpRestore.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.grpRestore.Location = new System.Drawing.Point(12, 154);
             this.grpRestore.Name = "grpRestore";
@@ -88,6 +128,44 @@
             this.grpRestore.TabIndex = 0;
             this.grpRestore.TabStop = false;
             this.grpRestore.Text = "恢复数据库";
+            // 
+            // btnRestore
+            // 
+            this.btnRestore.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnRestore.BaseColor = System.Drawing.Color.AliceBlue;
+            this.btnRestore.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnRestore.DownBack = null;
+            this.btnRestore.DrawType = CCWin.SkinControl.DrawStyle.Img;
+            this.btnRestore.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
+            this.btnRestore.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRestore.Location = new System.Drawing.Point(74, 69);
+            this.btnRestore.MouseBack = global::WinForm.Properties.Resources.blue_btn_normal;
+            this.btnRestore.Name = "btnRestore";
+            this.btnRestore.NormlBack = global::WinForm.Properties.Resources.blue_btn_move;
+            this.btnRestore.Size = new System.Drawing.Size(375, 22);
+            this.btnRestore.TabIndex = 9;
+            this.btnRestore.Text = "恢复数据库";
+            this.btnRestore.UseVisualStyleBackColor = false;
+            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click_1);
+            // 
+            // btnRestroePath
+            // 
+            this.btnRestroePath.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnRestroePath.BaseColor = System.Drawing.Color.AliceBlue;
+            this.btnRestroePath.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btnRestroePath.DownBack = null;
+            this.btnRestroePath.DrawType = CCWin.SkinControl.DrawStyle.Img;
+            this.btnRestroePath.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
+            this.btnRestroePath.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRestroePath.Location = new System.Drawing.Point(427, 37);
+            this.btnRestroePath.MouseBack = global::WinForm.Properties.Resources.blue_btn_normal;
+            this.btnRestroePath.Name = "btnRestroePath";
+            this.btnRestroePath.NormlBack = global::WinForm.Properties.Resources.blue_btn_move;
+            this.btnRestroePath.Size = new System.Drawing.Size(70, 22);
+            this.btnRestroePath.TabIndex = 6;
+            this.btnRestroePath.Text = "选择";
+            this.btnRestroePath.UseVisualStyleBackColor = false;
+            this.btnRestroePath.Click += new System.EventHandler(this.btnRestroePath_Click_1);
             // 
             // lblRestore
             // 
@@ -103,68 +181,32 @@
             // 
             this.txtRestore.Location = new System.Drawing.Point(94, 37);
             this.txtRestore.Name = "txtRestore";
+            this.txtRestore.ReadOnly = true;
             this.txtRestore.Size = new System.Drawing.Size(327, 23);
             this.txtRestore.TabIndex = 1;
-            // 
-            // btnRestore
-            // 
-            this.btnRestore.Location = new System.Drawing.Point(74, 73);
-            this.btnRestore.Name = "btnRestore";
-            this.btnRestore.Size = new System.Drawing.Size(392, 27);
-            this.btnRestore.TabIndex = 7;
-            this.btnRestore.Text = "恢复数据库";
-            this.btnRestore.UseVisualStyleBackColor = true;
-            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
-            // 
-            // btnRestroePath
-            // 
-            this.btnRestroePath.Location = new System.Drawing.Point(427, 37);
-            this.btnRestroePath.Name = "btnRestroePath";
-            this.btnRestroePath.Size = new System.Drawing.Size(75, 25);
-            this.btnRestroePath.TabIndex = 6;
-            this.btnRestroePath.Text = "选择";
-            this.btnRestroePath.UseVisualStyleBackColor = true;
-            this.btnRestroePath.Click += new System.EventHandler(this.btnRestroePath_Click);
             // 
             // ofdlgRestore
             // 
             this.ofdlgRestore.FileName = "openFileDialog1";
             // 
-            // btnBackup
-            // 
-            this.btnBackup.Location = new System.Drawing.Point(74, 65);
-            this.btnBackup.Name = "btnBackup";
-            this.btnBackup.Size = new System.Drawing.Size(392, 27);
-            this.btnBackup.TabIndex = 5;
-            this.btnBackup.Text = "备份数据库";
-            this.btnBackup.UseVisualStyleBackColor = true;
-            this.btnBackup.Click += new System.EventHandler(this.btnBackup_Click);
-            // 
-            // btnBackupPath
-            // 
-            this.btnBackupPath.Location = new System.Drawing.Point(427, 31);
-            this.btnBackupPath.Name = "btnBackupPath";
-            this.btnBackupPath.Size = new System.Drawing.Size(75, 25);
-            this.btnBackupPath.TabIndex = 4;
-            this.btnBackupPath.Text = "选择";
-            this.btnBackupPath.UseVisualStyleBackColor = true;
-            this.btnBackupPath.Click += new System.EventHandler(this.btnBackupPath_Click);
-            // 
             // FormDB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(544, 289);
             this.CloseDownBack = global::WinForm.Properties.Resources.CloseDownBack;
             this.CloseMouseBack = global::WinForm.Properties.Resources.CloseMouseBack;
             this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
             this.Controls.Add(this.grpRestore);
             this.Controls.Add(this.grpBackup);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MiniDownBack = global::WinForm.Properties.Resources.MiniDownBack;
             this.MiniMouseBack = global::WinForm.Properties.Resources.MiniMouseBack;
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "FormDB";
+            this.ShowBorder = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "数据库备份与恢复";
             this.grpBackup.ResumeLayout(false);
@@ -183,11 +225,11 @@
         private System.Windows.Forms.GroupBox grpRestore;
         private System.Windows.Forms.Label lblRestore;
         private System.Windows.Forms.TextBox txtRestore;
-        private System.Windows.Forms.Button btnRestore;
-        private System.Windows.Forms.Button btnRestroePath;
         private System.Windows.Forms.SaveFileDialog sfdlgBackup;
         private System.Windows.Forms.OpenFileDialog ofdlgRestore;
-        private System.Windows.Forms.Button btnBackupPath;
-        private System.Windows.Forms.Button btnBackup;
+        private CCWin.SkinControl.SkinButton btnBackupPath;
+        private CCWin.SkinControl.SkinButton btnBackup;
+        private CCWin.SkinControl.SkinButton btnRestore;
+        private CCWin.SkinControl.SkinButton btnRestroePath;
     }
 }

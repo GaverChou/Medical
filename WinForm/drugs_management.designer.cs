@@ -44,14 +44,17 @@
             this.skinLabel6 = new CCWin.SkinControl.SkinLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_export = new CCWin.SkinControl.SkinButton();
+            this.sfdlgBackup = new System.Windows.Forms.SaveFileDialog();
             this.skinPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.drugs_dvg)).BeginInit();
             this.SuspendLayout();
             // 
             // skinPanel1
             // 
-            this.skinPanel1.BackColor = System.Drawing.Color.Gray;
+            this.skinPanel1.BackColor = System.Drawing.Color.White;
             this.skinPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.skinPanel1.Controls.Add(this.btn_export);
             this.skinPanel1.Controls.Add(this.btn_delete);
             this.skinPanel1.Controls.Add(this.tx_count);
             this.skinPanel1.Controls.Add(this.tb_count);
@@ -75,27 +78,30 @@
             // btn_delete
             // 
             this.btn_delete.BackColor = System.Drawing.Color.Transparent;
+            this.btn_delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_delete.BackgroundImage")));
+            this.btn_delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_delete.BaseColor = System.Drawing.Color.PowderBlue;
             this.btn_delete.ControlState = CCWin.SkinClass.ControlState.Normal;
             this.btn_delete.DownBack = null;
-            this.btn_delete.Font = new System.Drawing.Font("微软雅黑", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
-            this.btn_delete.Location = new System.Drawing.Point(625, 413);
-            this.btn_delete.MouseBack = null;
+            this.btn_delete.DrawType = CCWin.SkinControl.DrawStyle.Img;
+            this.btn_delete.Font = new System.Drawing.Font("微软雅黑", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btn_delete.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_delete.Location = new System.Drawing.Point(629, 408);
+            this.btn_delete.MouseBack = ((System.Drawing.Image)(resources.GetObject("btn_delete.MouseBack")));
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.NormlBack = null;
-            this.btn_delete.Size = new System.Drawing.Size(87, 18);
-            this.btn_delete.TabIndex = 11;
+            this.btn_delete.NormlBack = ((System.Drawing.Image)(resources.GetObject("btn_delete.NormlBack")));
+            this.btn_delete.Size = new System.Drawing.Size(78, 31);
+            this.btn_delete.TabIndex = 29;
+            this.btn_delete.Text = "删除";
             this.btn_delete.UseVisualStyleBackColor = false;
-            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click_1);
             // 
             // tx_count
             // 
             this.tx_count.Location = new System.Drawing.Point(543, 44);
             this.tx_count.Name = "tx_count";
             this.tx_count.ReadOnly = true;
-            this.tx_count.Size = new System.Drawing.Size(100, 21);
+            this.tx_count.Size = new System.Drawing.Size(100, 25);
             this.tx_count.TabIndex = 10;
             this.tx_count.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tx_count.WaterText = "";
@@ -107,7 +113,7 @@
             this.tb_count.Location = new System.Drawing.Point(312, 44);
             this.tb_count.Name = "tb_count";
             this.tb_count.ReadOnly = true;
-            this.tb_count.Size = new System.Drawing.Size(100, 23);
+            this.tb_count.Size = new System.Drawing.Size(100, 27);
             this.tb_count.TabIndex = 9;
             this.tb_count.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.tb_count.WaterText = "";
@@ -143,9 +149,9 @@
             this.skinLabel4.AutoSize = true;
             this.skinLabel4.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel4.BorderColor = System.Drawing.Color.White;
-            this.skinLabel4.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.skinLabel4.ForeColor = System.Drawing.Color.Black;
-            this.skinLabel4.Location = new System.Drawing.Point(1, 92);
+            this.skinLabel4.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.skinLabel4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.skinLabel4.Location = new System.Drawing.Point(4, 92);
             this.skinLabel4.Name = "skinLabel4";
             this.skinLabel4.Size = new System.Drawing.Size(69, 20);
             this.skinLabel4.TabIndex = 5;
@@ -155,7 +161,7 @@
             // skinLabel3
             // 
             this.skinLabel3.AutoSize = true;
-            this.skinLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel3.BackColor = System.Drawing.Color.PowderBlue;
             this.skinLabel3.BorderColor = System.Drawing.Color.White;
             this.skinLabel3.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel3.Location = new System.Drawing.Point(450, 45);
@@ -168,7 +174,7 @@
             // skinLabel2
             // 
             this.skinLabel2.AutoSize = true;
-            this.skinLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel2.BackColor = System.Drawing.Color.PowderBlue;
             this.skinLabel2.BorderColor = System.Drawing.Color.White;
             this.skinLabel2.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel2.Location = new System.Drawing.Point(202, 45);
@@ -200,7 +206,7 @@
             this.skinLabel1.Font = new System.Drawing.Font("微软雅黑", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.skinLabel1.Location = new System.Drawing.Point(346, 97);
             this.skinLabel1.Name = "skinLabel1";
-            this.skinLabel1.Size = new System.Drawing.Size(180, 30);
+            this.skinLabel1.Size = new System.Drawing.Size(186, 30);
             this.skinLabel1.TabIndex = 7;
             this.skinLabel1.Text = "药 材 库 存 状 况";
             // 
@@ -250,13 +256,34 @@
             this.button1.Size = new System.Drawing.Size(95, 108);
             this.button1.TabIndex = 2;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btn_export
+            // 
+            this.btn_export.BackColor = System.Drawing.Color.Transparent;
+            this.btn_export.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_export.BackgroundImage")));
+            this.btn_export.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_export.BaseColor = System.Drawing.Color.PowderBlue;
+            this.btn_export.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.btn_export.DownBack = null;
+            this.btn_export.DrawType = CCWin.SkinControl.DrawStyle.Img;
+            this.btn_export.Font = new System.Drawing.Font("微软雅黑", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.btn_export.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_export.Location = new System.Drawing.Point(524, 408);
+            this.btn_export.MouseBack = ((System.Drawing.Image)(resources.GetObject("btn_export.MouseBack")));
+            this.btn_export.Name = "btn_export";
+            this.btn_export.NormlBack = ((System.Drawing.Image)(resources.GetObject("btn_export.NormlBack")));
+            this.btn_export.Size = new System.Drawing.Size(78, 31);
+            this.btn_export.TabIndex = 30;
+            this.btn_export.Text = "导出";
+            this.btn_export.UseVisualStyleBackColor = false;
+            this.btn_export.Click += new System.EventHandler(this.btn_export_Click);
             // 
             // drugs_management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.CaptionFont = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.ClientSize = new System.Drawing.Size(818, 619);
             this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
@@ -267,10 +294,12 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.skinPanel1);
             this.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaxSize = new System.Drawing.Size(0, 0);
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "drugs_management";
+            this.ShowBorder = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "药品管理";
             this.Load += new System.EventHandler(this.drugs_management_Load);
@@ -299,6 +328,8 @@
         private CCWin.SkinControl.SkinWaterTextBox tx_count;
         private CCWin.SkinControl.SkinWaterTextBox tb_count;
         private CCWin.SkinControl.SkinButton btn_delete;
+        private CCWin.SkinControl.SkinButton btn_export;
+        private System.Windows.Forms.SaveFileDialog sfdlgBackup;
 
     }
 }

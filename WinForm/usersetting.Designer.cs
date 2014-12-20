@@ -28,8 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usersetting));
             this.label1 = new System.Windows.Forms.Label();
             this.skinPanel1 = new CCWin.SkinControl.SkinPanel();
+            this.tb_gender = new CCWin.SkinControl.SkinWaterTextBox();
+            this.tb_name = new CCWin.SkinControl.SkinWaterTextBox();
+            this.tb_idcard = new CCWin.SkinControl.SkinWaterTextBox();
+            this.tb_address = new CCWin.SkinControl.SkinWaterTextBox();
+            this.tb_department = new CCWin.SkinControl.SkinWaterTextBox();
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.return_but = new CCWin.SkinControl.SkinButton();
             this.skinLabel5 = new CCWin.SkinControl.SkinLabel();
@@ -39,11 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ensure_btn = new CCWin.SkinControl.SkinButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.tb_department = new CCWin.SkinControl.SkinWaterTextBox();
-            this.tb_address = new CCWin.SkinControl.SkinWaterTextBox();
-            this.tb_idcard = new CCWin.SkinControl.SkinWaterTextBox();
-            this.tb_name = new CCWin.SkinControl.SkinWaterTextBox();
-            this.tb_gender = new CCWin.SkinControl.SkinWaterTextBox();
             this.skinPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +87,56 @@
             this.skinPanel1.NormlBack = null;
             this.skinPanel1.Size = new System.Drawing.Size(283, 347);
             this.skinPanel1.TabIndex = 11;
+            // 
+            // tb_gender
+            // 
+            this.tb_gender.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tb_gender.Location = new System.Drawing.Point(159, 232);
+            this.tb_gender.Name = "tb_gender";
+            this.tb_gender.Size = new System.Drawing.Size(100, 27);
+            this.tb_gender.TabIndex = 23;
+            this.tb_gender.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_gender.WaterText = "";
+            // 
+            // tb_name
+            // 
+            this.tb_name.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tb_name.Location = new System.Drawing.Point(159, 198);
+            this.tb_name.Name = "tb_name";
+            this.tb_name.Size = new System.Drawing.Size(100, 27);
+            this.tb_name.TabIndex = 22;
+            this.tb_name.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_name.WaterText = "";
+            // 
+            // tb_idcard
+            // 
+            this.tb_idcard.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tb_idcard.Location = new System.Drawing.Point(159, 164);
+            this.tb_idcard.Name = "tb_idcard";
+            this.tb_idcard.Size = new System.Drawing.Size(100, 27);
+            this.tb_idcard.TabIndex = 21;
+            this.tb_idcard.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_idcard.WaterText = "";
+            // 
+            // tb_address
+            // 
+            this.tb_address.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.tb_address.Location = new System.Drawing.Point(159, 136);
+            this.tb_address.Name = "tb_address";
+            this.tb_address.Size = new System.Drawing.Size(100, 27);
+            this.tb_address.TabIndex = 20;
+            this.tb_address.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_address.WaterText = "";
+            // 
+            // tb_department
+            // 
+            this.tb_department.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
+            this.tb_department.Location = new System.Drawing.Point(159, 104);
+            this.tb_department.Name = "tb_department";
+            this.tb_department.Size = new System.Drawing.Size(100, 27);
+            this.tb_department.TabIndex = 19;
+            this.tb_department.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.tb_department.WaterText = "";
             // 
             // skinLabel1
             // 
@@ -209,56 +260,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "你好！";
             // 
-            // tb_department
-            // 
-            this.tb_department.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
-            this.tb_department.Location = new System.Drawing.Point(159, 104);
-            this.tb_department.Name = "tb_department";
-            this.tb_department.Size = new System.Drawing.Size(100, 27);
-            this.tb_department.TabIndex = 19;
-            this.tb_department.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.tb_department.WaterText = "";
-            // 
-            // tb_address
-            // 
-            this.tb_address.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tb_address.Location = new System.Drawing.Point(159, 136);
-            this.tb_address.Name = "tb_address";
-            this.tb_address.Size = new System.Drawing.Size(100, 27);
-            this.tb_address.TabIndex = 20;
-            this.tb_address.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.tb_address.WaterText = "";
-            // 
-            // tb_idcard
-            // 
-            this.tb_idcard.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tb_idcard.Location = new System.Drawing.Point(159, 164);
-            this.tb_idcard.Name = "tb_idcard";
-            this.tb_idcard.Size = new System.Drawing.Size(100, 27);
-            this.tb_idcard.TabIndex = 21;
-            this.tb_idcard.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.tb_idcard.WaterText = "";
-            // 
-            // tb_name
-            // 
-            this.tb_name.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tb_name.Location = new System.Drawing.Point(159, 198);
-            this.tb_name.Name = "tb_name";
-            this.tb_name.Size = new System.Drawing.Size(100, 27);
-            this.tb_name.TabIndex = 22;
-            this.tb_name.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.tb_name.WaterText = "";
-            // 
-            // tb_gender
-            // 
-            this.tb_gender.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.tb_gender.Location = new System.Drawing.Point(159, 232);
-            this.tb_gender.Name = "tb_gender";
-            this.tb_gender.Size = new System.Drawing.Size(100, 27);
-            this.tb_gender.TabIndex = 23;
-            this.tb_gender.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.tb_gender.WaterText = "";
-            // 
             // usersetting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -271,12 +272,14 @@
             this.CloseNormlBack = global::WinForm.Properties.Resources.CloseNormlBack1;
             this.Controls.Add(this.skinPanel1);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaxSize = new System.Drawing.Size(0, 0);
             this.MiniDownBack = global::WinForm.Properties.Resources.MiniDownBack;
             this.MiniMouseBack = global::WinForm.Properties.Resources.MiniMouseBack;
             this.MiniNormlBack = global::WinForm.Properties.Resources.MiniNormlBack;
             this.Name = "usersetting";
+            this.ShowBorder = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户设置";
             this.Load += new System.EventHandler(this.usersetting_Load);

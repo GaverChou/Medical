@@ -23,7 +23,7 @@ namespace WinForm
         string restorePath = ""; //恢复路径
         BLL.BackupAndRestoreDb bll = new BLL.BackupAndRestoreDb();
 
-        private void btnBackupPath_Click(object sender, EventArgs e)
+        private void btnBackupPath_Click_1(object sender, EventArgs e)
         {
             sfdlgBackup.FilterIndex = 1;
             sfdlgBackup.FileName = "";
@@ -34,6 +34,19 @@ namespace WinForm
                 txtBackup.ReadOnly = true;
             }
             backupPath = txtBackup.Text.Trim();
+        }
+
+        private void btnRestroePath_Click_1(object sender, EventArgs e)
+        {
+            ofdlgRestore.FilterIndex = 1;
+            ofdlgRestore.FileName = "";
+            ofdlgRestore.Filter = "Bak Files (*.bak)|*.bak";
+            if (ofdlgRestore.ShowDialog() == DialogResult.OK)
+            {
+                txtRestore.Text = ofdlgRestore.FileName.ToString();
+                txtRestore.ReadOnly = true;
+            }
+            restorePath = txtRestore.Text.Trim();
         }
 
         private void btnBackup_Click(object sender, EventArgs e)
@@ -59,26 +72,13 @@ namespace WinForm
             }
         }
 
-        private void btnRestroePath_Click(object sender, EventArgs e)
-        {
-            ofdlgRestore.FilterIndex = 1;
-            ofdlgRestore.FileName = "";
-            ofdlgRestore.Filter = "Bak Files (*.bak)|*.bak";
-            if (ofdlgRestore.ShowDialog() == DialogResult.OK)
-            {
-                txtRestore.Text = ofdlgRestore.FileName.ToString();
-                txtRestore.ReadOnly = true;
-            }
-            restorePath = txtRestore.Text.Trim();
-        }
-
-        private void btnRestore_Click(object sender, EventArgs e)
+        private void btnRestore_Click_1(object sender, EventArgs e)
         {
             if (restorePath == "")
             {
                 MessageBoxBuilder.buildbox("请先选择数据库恢复路径", "提示");
                 return;
-            }           
+            }
             try
             {
                 this.Cursor = Cursors.WaitCursor;
@@ -90,7 +90,7 @@ namespace WinForm
                 MessageBoxBuilder.buildErrbox(ex.Message);
             }
             finally
-            {                
+            {
                 this.Cursor = Cursors.Arrow;
             }
         }

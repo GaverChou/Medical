@@ -92,6 +92,7 @@ C:\Users\Administrator\Desktop\数据库工程\Medical\WinForm\bin\Release\Model
 C:\Users\Administrator\Desktop\数据库工程\Medical\WinForm\bin\Release\SkinForm.dll
 C:\Users\Administrator\Desktop\数据库工程\Medical\WinForm\bin\Release\IDAL.dll
 C:\Users\Administrator\Desktop\数据库工程\Medical\WinForm\bin\Release\DALFactory.dll
+C:\Users\Administrator\Desktop\数据库工程\Medical\WinForm\bin\Release\ExcelLibrary.dll
 C:\Users\Administrator\Desktop\数据库工程\Medical\WinForm\bin\Release\BLL.pdb
 C:\Users\Administrator\Desktop\数据库工程\Medical\WinForm\bin\Release\Common.pdb
 C:\Users\Administrator\Desktop\数据库工程\Medical\WinForm\bin\Release\Model.pdb

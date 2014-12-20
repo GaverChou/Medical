@@ -43,6 +43,7 @@ C:\Users\Administrator\Desktop\数据库工程\Medical\BLL\bin\Release\Common.dl
 C:\Users\Administrator\Desktop\数据库工程\Medical\BLL\bin\Release\DALFactory.dll
 C:\Users\Administrator\Desktop\数据库工程\Medical\BLL\bin\Release\IDAL.dll
 C:\Users\Administrator\Desktop\数据库工程\Medical\BLL\bin\Release\Model.dll
+C:\Users\Administrator\Desktop\数据库工程\Medical\BLL\bin\Release\ExcelLibrary.dll
 C:\Users\Administrator\Desktop\数据库工程\Medical\BLL\bin\Release\Common.pdb
 C:\Users\Administrator\Desktop\数据库工程\Medical\BLL\bin\Release\DALFactory.pdb
 C:\Users\Administrator\Desktop\数据库工程\Medical\BLL\bin\Release\IDAL.pdb
